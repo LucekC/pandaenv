@@ -1,0 +1,716 @@
+2021-06-04T16:17:12.760Z [jfac ] [WARN ] [                ] [ackson2ObjectMapperBuilder:836] [background-preinit  ] - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2021-06-04T16:17:13.024Z [jfac ] [INFO ] [f6a8e1e1632da03b] [licationContextInitializer:162] [ocalhost-startStop-1] - Access (jfac) service initialization started. Version: 7.19.4 Revision: 71904900 PID: 3892 Home: /opt/jfrog/artifactory
+2021-06-04T16:17:13.267Z [jfac ] [INFO ] [f6a8e1e1632da03b] [o.j.a.AccessApplication:50    ] [ocalhost-startStop-1] - Starting AccessApplication v7.19.4 on cc86a18adde6 with PID 3892 (/opt/jfrog/artifactory/app/artifactory/tomcat/webapps/access/WEB-INF/lib/access-application-7.19.4.jar started by artifactory in /var/opt/jfrog/artifactory)
+2021-06-04T16:17:13.269Z [jfac ] [INFO ] [f6a8e1e1632da03b] [o.j.a.AccessApplication:652   ] [ocalhost-startStop-1] - The following profiles are active: production
+2021-06-04T16:17:21.129Z [jfac ] [WARN ] [f6a8e1e1632da03b] [c.z.h.u.DriverDataSource:70   ] [ocalhost-startStop-1] - Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
+2021-06-04T16:17:21.240Z [jfac ] [INFO ] [f6a8e1e1632da03b] [s.d.u.AccessJdbcHelperImpl:140] [ocalhost-startStop-1] - Database: Apache Derby 10.14.2.0 - (1828579). Driver: Apache Derby Embedded JDBC Driver 10.14.2.0 - (1828579)
+2021-06-04T16:17:21.329Z [jfac ] [INFO ] [f6a8e1e1632da03b] [s.d.u.AccessJdbcHelperImpl:151] [ocalhost-startStop-1] - ***Creating database schema***
+2021-06-04T16:17:23.481Z [jfac ] [INFO ] [f6a8e1e1632da03b] [s.d.u.AccessJdbcHelperImpl:167] [ocalhost-startStop-1] - Setting new schema baseline to latest version: 7.18
+2021-06-04T16:17:24.616Z [jfac ] [INFO ] [f6a8e1e1632da03b] [alConfigurationServiceBase:179] [ocalhost-startStop-1] - Configuration data wasn't found in db. Loading defaults
+2021-06-04T16:17:25.453Z [jfac ] [INFO ] [f6a8e1e1632da03b] [alConfigurationServiceBase:114] [ocalhost-startStop-1] - Current configurations are the same as the new configurations, no need for an update. No action was taken.
+2021-06-04T16:17:26.131Z [jfac ] [INFO ] [f6a8e1e1632da03b] [.h.AccessNodeIdProviderImpl:73] [ocalhost-startStop-1] - Service id initialized: jfac@01f7bx19j4gse11x6zk7h10p62
+2021-06-04T16:17:26.384Z [jfac ] [INFO ] [f6a8e1e1632da03b] [a.k.m.MasterKeyBootstrapper:70] [ocalhost-startStop-1] - No master.key supplied. Generating master.key
+2021-06-04T16:17:26.692Z [jfac ] [INFO ] [f6a8e1e1632da03b] [.k.m.MasterKeyBootstrapper:146] [ocalhost-startStop-1] - Saving master.key to /opt/jfrog/artifactory/var/etc/security/master.key
+2021-06-04T16:17:28.175Z [jfac ] [INFO ] [f6a8e1e1632da03b] [j.a.s.s.t.TokenServiceImpl:111] [ocalhost-startStop-1] - Scheduling task for revoking expired tokens using cron expression: 0 0 0/1 * * ?
+2021-06-04T16:17:29.490Z [jfac ] [INFO ] [f6a8e1e1632da03b] [b.AccessServerBootstrapImpl:43] [ocalhost-startStop-1] - [ACCESS BOOTSTRAP] Starting JFrog Access bootstrap...
+2021-06-04T16:17:29.491Z [jfac ] [INFO ] [f6a8e1e1632da03b] [CertificateFileHandlerBase:115] [ocalhost-startStop-1] - [ACCESS BOOTSTRAP] Initializing root certificate.
+2021-06-04T16:17:29.500Z [jfac ] [INFO ] [f6a8e1e1632da03b] [CertificateFileHandlerBase:272] [ocalhost-startStop-1] - [ACCESS BOOTSTRAP] Generating root private key and certificate.
+2021-06-04T16:17:32.614Z [jfac ] [INFO ] [f6a8e1e1632da03b] [CertificateFileHandlerBase:328] [ocalhost-startStop-1] - [ACCESS BOOTSTRAP] Saved new root certificate at: /opt/jfrog/artifactory/var/etc/access/keys/root.crt
+2021-06-04T16:17:32.615Z [jfac ] [INFO ] [f6a8e1e1632da03b] [CertificateFileHandlerBase:132] [ocalhost-startStop-1] - [ACCESS BOOTSTRAP] Finished initializing root certificate. Certificate source: GENERATED
+2021-06-04T16:17:32.617Z [jfac ] [INFO ] [f6a8e1e1632da03b] [CertificateFileHandlerBase:115] [ocalhost-startStop-1] - [ACCESS BOOTSTRAP] Initializing ca certificate.
+2021-06-04T16:17:32.624Z [jfac ] [INFO ] [f6a8e1e1632da03b] [CertificateFileHandlerBase:272] [ocalhost-startStop-1] - [ACCESS BOOTSTRAP] Generating ca private key and certificate.
+2021-06-04T16:17:33.258Z [jfac ] [INFO ] [f6a8e1e1632da03b] [CertificateFileHandlerBase:328] [ocalhost-startStop-1] - [ACCESS BOOTSTRAP] Saved new ca certificate at: /opt/jfrog/artifactory/var/etc/access/keys/ca.crt
+2021-06-04T16:17:33.259Z [jfac ] [INFO ] [f6a8e1e1632da03b] [CertificateFileHandlerBase:132] [ocalhost-startStop-1] - [ACCESS BOOTSTRAP] Finished initializing ca certificate. Certificate source: GENERATED
+2021-06-04T16:17:33.528Z [jfac ] [WARN ] [f6a8e1e1632da03b] [c.z.h.u.DriverDataSource:70   ] [ocalhost-startStop-1] - Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
+2021-06-04T16:17:34.495Z [jfac ] [INFO ] [f6a8e1e1632da03b] [.s.b.AccessProjectBootstrap:76] [ocalhost-startStop-1] - Finished initializing Projects Entities in 63.26 millis
+2021-06-04T16:17:34.518Z [jfac ] [INFO ] [f6a8e1e1632da03b] [.s.b.AccessProjectBootstrap:69] [ocalhost-startStop-1] - Finished initializing Projects Shared Entities in 21.68 millis
+2021-06-04T16:17:34.609Z [jfac ] [INFO ] [f6a8e1e1632da03b] [.s.b.AccessProjectBootstrap:89] [ocalhost-startStop-1] - Finished initializing Projects permissions in 89.69 millis
+2021-06-04T16:17:34.609Z [jfac ] [INFO ] [f6a8e1e1632da03b] [.s.b.AccessProjectBootstrap:61] [ocalhost-startStop-1] - Finished initializing Projects in 184.84 millis
+2021-06-04T16:17:34.610Z [jfac ] [INFO ] [f6a8e1e1632da03b] [.a.s.s.m.MetricsServiceImpl:47] [ocalhost-startStop-1] - Metrics Framework Service is disabled
+2021-06-04T16:17:34.611Z [jfac ] [INFO ] [f6a8e1e1632da03b] [b.AccessServerBootstrapImpl:52] [ocalhost-startStop-1] - [ACCESS BOOTSTRAP] JFrog Access bootstrap finished.
+2021-06-04T16:17:37.651Z [jfac ] [INFO ] [f6a8e1e1632da03b] [o.j.a.s.r.s.GrpcServerImpl:65 ] [ocalhost-startStop-1] - Starting gRPC Server on port 8045
+2021-06-04T16:17:38.454Z [jfac ] [INFO ] [f6a8e1e1632da03b] [o.j.a.s.r.s.GrpcServerImpl:84 ] [ocalhost-startStop-1] - gRPC Server started, listening on 8045
+2021-06-04T16:17:38.502Z [jfac ] [INFO ] [f6a8e1e1632da03b] [o.j.a.s.s.JoinKeyAccess:172   ] [ocalhost-startStop-1] - Cluster join: Join key loaded successfully (from: generated)
+2021-06-04T16:17:38.579Z [jfac ] [INFO ] [f6a8e1e1632da03b] [a.s.b.AccessServerRegistrar:66] [ocalhost-startStop-1] - [ACCESS BOOTSTRAP] Starting JFrog Access registrar...
+2021-06-04T16:17:38.637Z [jfac ] [INFO ] [ad070406a357ed11] [a.c.RefreshableScheduledJob:53] [ocalhost-startStop-1] - Scheduling loadCertificates task to run every 30 seconds
+2021-06-04T16:17:38.718Z [jfac ] [INFO ] [746e1d76832e2790] [a.c.RefreshableScheduledJob:53] [ocalhost-startStop-1] - Scheduling heartbeat task to run every 5 seconds
+2021-06-04T16:17:38.725Z [jfac ] [INFO ] [746e1d76832e2790] [a.c.RefreshableScheduledJob:53] [ocalhost-startStop-1] - Scheduling federationCleanupService task to run every 1209600 seconds
+2021-06-04T16:17:38.775Z [jfac ] [INFO ] [746e1d76832e2790] [a.c.RefreshableScheduledJob:53] [ocalhost-startStop-1] - Scheduling staleTokenCleanup task to run every 3600 seconds
+2021-06-04T16:17:43.746Z [jfac ] [INFO ] [746e1d76832e2790] [o.j.a.AccessApplication:59    ] [ocalhost-startStop-1] - Started AccessApplication in 35.398582449 seconds (JVM running for 43.295)
+2021-06-04T16:17:44.804Z [jfac ] [WARN ] [f6a8e1e1632da03b] [o.j.c.ExecutionUtils:165      ] [pool-13-thread-2    ] - Retry 10 Elapsed 6.21 secs failed: Registration with router on URL http://localhost:8046 failed with error: UNAVAILABLE: io exception. Trying again
+2021-06-04T16:17:47.861Z [jfac ] [INFO ] [2b2b9487684b23be] [a.c.RefreshableScheduledJob:53] [27.0.0.1-8040-exec-2] - Scheduling federationCleanupService task to run every 1209600 seconds
+2021-06-04T16:17:47.865Z [jfac ] [INFO ] [2dda58c16ae5a559] [.f.FederationCleanupService:59] [jf-access-task1     ] - Running clean up of outdated Federation events
+2021-06-04T16:17:48.320Z [jfac ] [INFO ] [2b2b9487684b23be] [s.r.NodeRegistryServiceImpl:68] [27.0.0.1-8040-exec-2] - Cluster join: Successfully joined jfrou@01f7bx1pe9qecxd1dj698wp1v5 with node id cc86a18adde6
+2021-06-04T16:17:49.846Z [jfac ] [WARN ] [f6a8e1e1632da03b] [o.j.c.ExecutionUtils:165      ] [pool-13-thread-2    ] - Retry 20 Elapsed 11.25 secs failed: Registration with router on URL http://localhost:8046 failed with error: UNAVAILABLE: io exception. Trying again
+2021-06-04T16:17:50.623Z [jfac ] [INFO ] [f6a8e1e1632da03b] [.AccessWithRouterRegistrar:111] [pool-13-thread-1    ] - Access Server successfully registered on Router on URL: http://localhost:8046
+2021-06-04T16:17:51.001Z [jfac ] [INFO ] [21a3c57068f8b2da] [a.c.RefreshableScheduledJob:53] [27.0.0.1-8040-exec-6] - Scheduling federationCleanupService task to run every 1209600 seconds
+2021-06-04T16:17:51.004Z [jfac ] [INFO ] [1a1567cc656d91c ] [.f.FederationCleanupService:59] [jf-access-task1     ] - Running clean up of outdated Federation events
+2021-06-04T16:17:51.133Z [jfac ] [INFO ] [21a3c57068f8b2da] [s.r.NodeRegistryServiceImpl:68] [27.0.0.1-8040-exec-6] - Cluster join: Successfully joined jfmd@01f7bx1qtktj5dgrd7t445jeh2 with node id cc86a18adde6
+2021-06-04T16:17:51.661Z [jfac ] [INFO ] [20df2280a107f3b6] [a.c.RefreshableScheduledJob:53] [27.0.0.1-8040-exec-8] - Scheduling federationCleanupService task to run every 1209600 seconds
+2021-06-04T16:17:51.662Z [jfac ] [INFO ] [5b2ad154bdf1977f] [.f.FederationCleanupService:59] [jf-access-task1     ] - Running clean up of outdated Federation events
+2021-06-04T16:17:51.712Z [jfac ] [INFO ] [20df2280a107f3b6] [s.r.NodeRegistryServiceImpl:68] [27.0.0.1-8040-exec-8] - Cluster join: Successfully joined jfevt@01f7bx19j4gse11x6zk7h10p62 with node id cc86a18adde6
+2021-06-04T16:17:51.714Z [jfac ] [INFO ] [f6a8e1e1632da03b] [.s.b.AccessServerRegistrar:121] [pool-13-thread-1    ] - [ACCESS BOOTSTRAP] Updating server 'cc86a18adde6' private key finger print to: 3057f7adbe70d14b62c8f0b7ef5832d86049596f246e1ea7d4c1696874cb3b7e ca private key finger print to: 2915bad9070fbf102e448da44c962aa21b219a386059398bf6812af84f8f4eb9
+2021-06-04T16:17:51.862Z [jfac ] [INFO ] [f6a8e1e1632da03b] [a.s.b.AccessServerRegistrar:77] [pool-13-thread-1    ] - [ACCESS BOOTSTRAP] JFrog Access registrar finished.
+2021-06-04T16:18:45.946Z [jfac ] [INFO ] [bc81e69c4b36ea41] [licationContextInitializer:162] [ocalhost-startStop-1] - Access (jfac) service initialization started. Version: 7.19.4 Revision: 71904900 PID: 3578 Home: /opt/jfrog/artifactory
+2021-06-04T16:18:46.053Z [jfac ] [INFO ] [bc81e69c4b36ea41] [o.j.a.AccessApplication:50    ] [ocalhost-startStop-1] - Starting AccessApplication v7.19.4 on 40b8095f9704 with PID 3578 (/opt/jfrog/artifactory/app/artifactory/tomcat/webapps/access/WEB-INF/lib/access-application-7.19.4.jar started by artifactory in /var/opt/jfrog/artifactory)
+2021-06-04T16:18:46.053Z [jfac ] [INFO ] [bc81e69c4b36ea41] [o.j.a.AccessApplication:652   ] [ocalhost-startStop-1] - The following profiles are active: production
+2021-06-04T16:18:46.368Z [jfac ] [WARN ] [                ] [ackson2ObjectMapperBuilder:836] [background-preinit  ] - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2021-06-04T16:18:54.232Z [jfac ] [WARN ] [bc81e69c4b36ea41] [c.z.h.u.DriverDataSource:70   ] [ocalhost-startStop-1] - Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
+2021-06-04T16:18:54.286Z [jfac ] [INFO ] [bc81e69c4b36ea41] [s.d.u.AccessJdbcHelperImpl:140] [ocalhost-startStop-1] - Database: Apache Derby 10.14.2.0 - (1828579). Driver: Apache Derby Embedded JDBC Driver 10.14.2.0 - (1828579)
+2021-06-04T16:18:56.377Z [jfac ] [INFO ] [bc81e69c4b36ea41] [alConfigurationServiceBase:182] [ocalhost-startStop-1] - Loading configuration from db finished successfully
+2021-06-04T16:18:56.855Z [jfac ] [INFO ] [bc81e69c4b36ea41] [alConfigurationServiceBase:114] [ocalhost-startStop-1] - Current configurations are the same as the new configurations, no need for an update. No action was taken.
+2021-06-04T16:18:58.007Z [jfac ] [INFO ] [bc81e69c4b36ea41] [.h.AccessNodeIdProviderImpl:73] [ocalhost-startStop-1] - Service id initialized: jfac@01f7bx19j4gse11x6zk7h10p62
+2021-06-04T16:18:59.907Z [jfac ] [INFO ] [bc81e69c4b36ea41] [j.a.s.s.t.TokenServiceImpl:111] [ocalhost-startStop-1] - Scheduling task for revoking expired tokens using cron expression: 0 0 0/1 * * ?
+2021-06-04T16:19:01.008Z [jfac ] [INFO ] [bc81e69c4b36ea41] [b.AccessServerBootstrapImpl:43] [ocalhost-startStop-1] - [ACCESS BOOTSTRAP] Starting JFrog Access bootstrap...
+2021-06-04T16:19:01.009Z [jfac ] [INFO ] [bc81e69c4b36ea41] [CertificateFileHandlerBase:115] [ocalhost-startStop-1] - [ACCESS BOOTSTRAP] Initializing root certificate.
+2021-06-04T16:19:01.887Z [jfac ] [INFO ] [bc81e69c4b36ea41] [CertificateFileHandlerBase:328] [ocalhost-startStop-1] - [ACCESS BOOTSTRAP] Saved new root certificate at: /opt/jfrog/artifactory/var/etc/access/keys/root.crt
+2021-06-04T16:19:01.897Z [jfac ] [INFO ] [bc81e69c4b36ea41] [CertificateFileHandlerBase:132] [ocalhost-startStop-1] - [ACCESS BOOTSTRAP] Finished initializing root certificate. Certificate source: DATABASE
+2021-06-04T16:19:01.900Z [jfac ] [INFO ] [bc81e69c4b36ea41] [CertificateFileHandlerBase:115] [ocalhost-startStop-1] - [ACCESS BOOTSTRAP] Initializing ca certificate.
+2021-06-04T16:19:02.073Z [jfac ] [INFO ] [bc81e69c4b36ea41] [CertificateFileHandlerBase:328] [ocalhost-startStop-1] - [ACCESS BOOTSTRAP] Saved new ca certificate at: /opt/jfrog/artifactory/var/etc/access/keys/ca.crt
+2021-06-04T16:19:02.075Z [jfac ] [INFO ] [bc81e69c4b36ea41] [CertificateFileHandlerBase:132] [ocalhost-startStop-1] - [ACCESS BOOTSTRAP] Finished initializing ca certificate. Certificate source: DATABASE
+2021-06-04T16:19:02.651Z [jfac ] [INFO ] [bc81e69c4b36ea41] [.s.b.AccessProjectBootstrap:76] [ocalhost-startStop-1] - Finished initializing Projects Entities in 129.85 millis
+2021-06-04T16:19:02.676Z [jfac ] [INFO ] [bc81e69c4b36ea41] [.s.b.AccessProjectBootstrap:69] [ocalhost-startStop-1] - Finished initializing Projects Shared Entities in 18.2 millis
+2021-06-04T16:19:02.840Z [jfac ] [INFO ] [bc81e69c4b36ea41] [.s.b.AccessProjectBootstrap:89] [ocalhost-startStop-1] - Finished initializing Projects permissions in 160.62 millis
+2021-06-04T16:19:02.844Z [jfac ] [INFO ] [bc81e69c4b36ea41] [.s.b.AccessProjectBootstrap:61] [ocalhost-startStop-1] - Finished initializing Projects in 357.51 millis
+2021-06-04T16:19:02.846Z [jfac ] [INFO ] [bc81e69c4b36ea41] [.a.s.s.m.MetricsServiceImpl:47] [ocalhost-startStop-1] - Metrics Framework Service is disabled
+2021-06-04T16:19:02.849Z [jfac ] [INFO ] [bc81e69c4b36ea41] [b.AccessServerBootstrapImpl:52] [ocalhost-startStop-1] - [ACCESS BOOTSTRAP] JFrog Access bootstrap finished.
+2021-06-04T16:19:07.369Z [jfac ] [INFO ] [bc81e69c4b36ea41] [o.j.a.s.r.s.GrpcServerImpl:65 ] [ocalhost-startStop-1] - Starting gRPC Server on port 8045
+2021-06-04T16:19:08.124Z [jfac ] [INFO ] [bc81e69c4b36ea41] [o.j.a.s.r.s.GrpcServerImpl:84 ] [ocalhost-startStop-1] - gRPC Server started, listening on 8045
+2021-06-04T16:19:08.164Z [jfac ] [INFO ] [bc81e69c4b36ea41] [o.j.a.s.s.JoinKeyAccess:172   ] [ocalhost-startStop-1] - Cluster join: Join key loaded successfully (from: /opt/jfrog/artifactory/var/etc/security/join.key)
+2021-06-04T16:19:08.327Z [jfac ] [INFO ] [bc81e69c4b36ea41] [a.s.b.AccessServerRegistrar:66] [ocalhost-startStop-1] - [ACCESS BOOTSTRAP] Starting JFrog Access registrar...
+2021-06-04T16:19:08.423Z [jfac ] [INFO ] [2022d871cbce8d02] [a.c.RefreshableScheduledJob:53] [ocalhost-startStop-1] - Scheduling loadCertificates task to run every 30 seconds
+2021-06-04T16:19:08.514Z [jfac ] [INFO ] [6f670dffb48209c ] [a.c.RefreshableScheduledJob:53] [ocalhost-startStop-1] - Scheduling heartbeat task to run every 5 seconds
+2021-06-04T16:19:08.519Z [jfac ] [INFO ] [6f670dffb48209c ] [a.c.RefreshableScheduledJob:53] [ocalhost-startStop-1] - Scheduling federationCleanupService task to run every 1209600 seconds
+2021-06-04T16:19:08.556Z [jfac ] [INFO ] [6f670dffb48209c ] [a.c.RefreshableScheduledJob:53] [ocalhost-startStop-1] - Scheduling staleTokenCleanup task to run every 3600 seconds
+2021-06-04T16:19:13.881Z [jfac ] [INFO ] [6f670dffb48209c ] [o.j.a.AccessApplication:59    ] [ocalhost-startStop-1] - Started AccessApplication in 30.823504577 seconds (JVM running for 40.352)
+2021-06-04T16:19:13.912Z [jfac ] [WARN ] [bc81e69c4b36ea41] [o.j.c.ExecutionUtils:165      ] [pool-16-thread-2    ] - Retry 10 Elapsed 5.56 secs failed: Registration with router on URL http://localhost:8046 failed with error: UNAVAILABLE: io exception. Trying again
+2021-06-04T16:19:18.933Z [jfac ] [WARN ] [bc81e69c4b36ea41] [o.j.c.ExecutionUtils:165      ] [pool-16-thread-2    ] - Retry 20 Elapsed 10.59 secs failed: Registration with router on URL http://localhost:8046 failed with error: UNAVAILABLE: io exception. Trying again
+2021-06-04T16:19:19.622Z [jfac ] [WARN ] [208bdf90a9a52ad2] [c.z.h.u.DriverDataSource:70   ] [27.0.0.1-8040-exec-3] - Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
+2021-06-04T16:19:20.448Z [jfac ] [INFO ] [208bdf90a9a52ad2] [s.r.NodeRegistryServiceImpl:68] [27.0.0.1-8040-exec-3] - Cluster join: Successfully joined jfrou@01f7bx1pe9qecxd1dj698wp1v5 with node id 40b8095f9704
+2021-06-04T16:19:23.952Z [jfac ] [WARN ] [bc81e69c4b36ea41] [o.j.c.ExecutionUtils:165      ] [pool-16-thread-2    ] - Retry 30 Elapsed 15.6 secs failed: Registration with router on URL http://localhost:8046 failed with error: UNAVAILABLE: io exception. Trying again
+2021-06-04T16:19:26.638Z [jfac ] [INFO ] [bc81e69c4b36ea41] [.AccessWithRouterRegistrar:111] [pool-16-thread-1    ] - Access Server successfully registered on Router on URL: http://localhost:8046
+2021-06-04T16:19:27.119Z [jfac ] [INFO ] [bc81e69c4b36ea41] [.s.b.AccessServerRegistrar:121] [pool-16-thread-1    ] - [ACCESS BOOTSTRAP] Updating server '40b8095f9704' private key finger print to: 3057f7adbe70d14b62c8f0b7ef5832d86049596f246e1ea7d4c1696874cb3b7e ca private key finger print to: 2915bad9070fbf102e448da44c962aa21b219a386059398bf6812af84f8f4eb9
+2021-06-04T16:19:27.202Z [jfac ] [INFO ] [bc81e69c4b36ea41] [a.s.b.AccessServerRegistrar:77] [pool-16-thread-1    ] - [ACCESS BOOTSTRAP] JFrog Access registrar finished.
+2021-06-04T16:19:27.222Z [jfac ] [INFO ] [54d4411e2818aef0] [s.r.NodeRegistryServiceImpl:68] [27.0.0.1-8040-exec-6] - Cluster join: Successfully joined jfevt@01f7bx19j4gse11x6zk7h10p62 with node id 40b8095f9704
+2021-06-04T16:19:27.466Z [jfac ] [INFO ] [616e3b7db5a050a9] [s.r.NodeRegistryServiceImpl:68] [27.0.0.1-8040-exec-7] - Cluster join: Successfully joined jfmd@01f7bx1qtktj5dgrd7t445jeh2 with node id 40b8095f9704
+2021-06-04T16:19:31.141Z [jfac ] [INFO ] [72bbcd876560c857] [a.c.RefreshableScheduledJob:53] [27.0.0.1-8040-exec-2] - Scheduling federationCleanupService task to run every 1209600 seconds
+2021-06-04T16:19:31.143Z [jfac ] [INFO ] [b1483a2ea3ca35e1] [.f.FederationCleanupService:59] [jf-access-task1     ] - Running clean up of outdated Federation events
+2021-06-04T16:19:31.196Z [jfac ] [INFO ] [72bbcd876560c857] [s.r.NodeRegistryServiceImpl:68] [27.0.0.1-8040-exec-2] - Cluster join: Successfully joined jfrt@01f7bx52m3966z1w8h4npq0tdb with node id 40b8095f9704
+2021-06-04T16:19:48.915Z [jfac ] [INFO ] [2c8873baa86e3e0b] [a.c.RefreshableScheduledJob:53] [7.0.0.1-8040-exec-10] - Scheduling federationCleanupService task to run every 1209600 seconds
+2021-06-04T16:19:48.917Z [jfac ] [INFO ] [af1eb194bec44de ] [.f.FederationCleanupService:59] [jf-access-task1     ] - Running clean up of outdated Federation events
+2021-06-04T16:19:48.939Z [jfac ] [INFO ] [2c8873baa86e3e0b] [s.r.NodeRegistryServiceImpl:68] [7.0.0.1-8040-exec-10] - Cluster join: Successfully joined jffe@000 with node id 40b8095f9704
+2021-06-04T16:19:56.506Z [jfac ] [INFO ] [                ] [CertificateFileHandlerBase:181] [c-default-executor-0] - Loading root certificate from database.
+2021-06-04T16:19:56.525Z [jfac ] [INFO ] [bc81e69c4b36ea41] [.s.b.AccessProjectBootstrap:89] [pool-16-thread-1    ] - Finished initializing Projects permissions in 21.75 millis
+2021-06-04T16:19:56.567Z [jfac ] [INFO ] [                ] [CertificateFileHandlerBase:328] [c-default-executor-0] - [ACCESS BOOTSTRAP] Saved new root certificate at: /opt/jfrog/artifactory/var/etc/access/keys/root.crt
+2021-06-04T16:19:56.568Z [jfac ] [INFO ] [                ] [CertificateFileHandlerBase:190] [c-default-executor-0] - Finished loading root certificate from database.
+2021-06-04T16:19:56.568Z [jfac ] [INFO ] [                ] [CertificateFileHandlerBase:181] [c-default-executor-0] - Loading ca certificate from database.
+2021-06-04T16:19:56.618Z [jfac ] [INFO ] [                ] [CertificateFileHandlerBase:328] [c-default-executor-0] - [ACCESS BOOTSTRAP] Saved new ca certificate at: /opt/jfrog/artifactory/var/etc/access/keys/ca.crt
+2021-06-04T16:19:56.618Z [jfac ] [INFO ] [                ] [CertificateFileHandlerBase:190] [c-default-executor-0] - Finished loading ca certificate from database.
+2021-06-04T16:19:56.621Z [jfac ] [INFO ] [                ] [alConfigurationServiceBase:182] [c-default-executor-0] - Loading configuration from db finished successfully
+2021-06-04T17:00:00.023Z [jfac ] [INFO ] [36e8824b91440971] [j.a.s.s.t.TokenServiceImpl:148] [jf-access-task1     ] - Revoked 2 expired tokens.
+2021-06-04T17:19:08.560Z [jfac ] [INFO ] [97c651221e4bfddb] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 40b8095f9704
+2021-06-04T17:19:08.569Z [jfac ] [INFO ] [97c651221e4bfddb] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-05-28T17:19:08 
+2021-06-04T18:19:08.605Z [jfac ] [INFO ] [c195c133d78b812a] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 40b8095f9704
+2021-06-04T18:19:08.609Z [jfac ] [INFO ] [c195c133d78b812a] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-05-28T18:19:08 
+2021-06-07T05:58:46.279Z [jfac ] [WARN ] [                ] [c.z.h.p.HikariPool:787        ] [iCP Main housekeeper] - HikariCP Main - Thread starvation or clock leap detected (housekeeper delta=47s487ms33µs440ns).
+2021-06-07T05:58:46.420Z [jfac ] [INFO ] [a754b97b30eeffe5] [o.j.a.s.s.c.s.HeartbeatJob:81 ] [jf-access-task1     ] - Refreshing server state after it was considered as stale by peers [last previous successful update 1622832229532]
+2021-06-07T05:58:46.696Z [jfac ] [INFO ] [a754b97b30eeffe5] [CertificateFileHandlerBase:181] [jf-access-task1     ] - Loading root certificate from database.
+2021-06-07T05:58:47.449Z [jfac ] [INFO ] [a754b97b30eeffe5] [CertificateFileHandlerBase:328] [jf-access-task1     ] - [ACCESS BOOTSTRAP] Saved new root certificate at: /opt/jfrog/artifactory/var/etc/access/keys/root.crt
+2021-06-07T05:58:47.449Z [jfac ] [INFO ] [a754b97b30eeffe5] [CertificateFileHandlerBase:190] [jf-access-task1     ] - Finished loading root certificate from database.
+2021-06-07T05:58:47.450Z [jfac ] [INFO ] [a754b97b30eeffe5] [CertificateFileHandlerBase:181] [jf-access-task1     ] - Loading ca certificate from database.
+2021-06-07T05:58:47.765Z [jfac ] [INFO ] [a754b97b30eeffe5] [CertificateFileHandlerBase:328] [jf-access-task1     ] - [ACCESS BOOTSTRAP] Saved new ca certificate at: /opt/jfrog/artifactory/var/etc/access/keys/ca.crt
+2021-06-07T05:58:47.770Z [jfac ] [INFO ] [a754b97b30eeffe5] [CertificateFileHandlerBase:190] [jf-access-task1     ] - Finished loading ca certificate from database.
+2021-06-07T05:58:47.794Z [jfac ] [INFO ] [a754b97b30eeffe5] [alConfigurationServiceBase:182] [jf-access-task1     ] - Loading configuration from db finished successfully
+2021-06-07T05:58:48.280Z [jfac ] [INFO ] [                ] [.s.b.AccessProjectBootstrap:89] [pool-16-thread-4    ] - Finished initializing Projects permissions in 1.58 secs
+2021-06-07T05:58:49.132Z [jfac ] [INFO ] [5a6be5c4056b5779] [j.a.s.s.t.TokenServiceImpl:148] [7.0.0.1-8040-exec-21] - Revoked 9 expired tokens.
+2021-06-07T05:58:49.339Z [jfac ] [INFO ] [5a6be5c4056b5779] [.AccessImporterExporterImpl:71] [7.0.0.1-8040-exec-21] - Exporting encryption...
+2021-06-07T05:58:49.356Z [jfac ] [INFO ] [5a6be5c4056b5779] [.AccessImporterExporterImpl:71] [7.0.0.1-8040-exec-21] - Exporting permissions...
+2021-06-07T05:58:49.443Z [jfac ] [INFO ] [5a6be5c4056b5779] [.AccessImporterExporterImpl:71] [7.0.0.1-8040-exec-21] - Exporting users...
+2021-06-07T05:58:49.650Z [jfac ] [INFO ] [5a6be5c4056b5779] [.AccessImporterExporterImpl:71] [7.0.0.1-8040-exec-21] - Exporting federation_events...
+2021-06-07T05:58:49.674Z [jfac ] [INFO ] [5a6be5c4056b5779] [.AccessImporterExporterImpl:71] [7.0.0.1-8040-exec-21] - Exporting federation_servers...
+2021-06-07T05:58:49.721Z [jfac ] [INFO ] [5a6be5c4056b5779] [.AccessImporterExporterImpl:71] [7.0.0.1-8040-exec-21] - Exporting tokens...
+2021-06-07T05:58:49.734Z [jfac ] [INFO ] [5a6be5c4056b5779] [.d.TokenStorageServiceImpl:220] [7.0.0.1-8040-exec-21] - Filtered out 9 system tokens from export
+2021-06-07T05:58:49.738Z [jfac ] [INFO ] [5a6be5c4056b5779] [.AccessImporterExporterImpl:71] [7.0.0.1-8040-exec-21] - Exporting groups...
+2021-06-07T05:58:49.808Z [jfac ] [INFO ] [5a6be5c4056b5779] [.AccessImporterExporterImpl:71] [7.0.0.1-8040-exec-21] - Exporting platform_configurations...
+2021-06-07T05:58:49.879Z [jfac ] [INFO ] [5a6be5c4056b5779] [.AccessImporterExporterImpl:71] [7.0.0.1-8040-exec-21] - Exporting config...
+2021-06-07T05:58:50.160Z [jfac ] [INFO ] [5a6be5c4056b5779] [.AccessImporterExporterImpl:71] [7.0.0.1-8040-exec-21] - Exporting NodeIdServiceId...
+2021-06-07T06:33:42.561Z [jfac ] [INFO ] [be53bd24cd5df918] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 40b8095f9704
+2021-06-07T06:33:42.569Z [jfac ] [INFO ] [be53bd24cd5df918] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-05-31T06:33:42 
+2021-06-07T07:33:42.571Z [jfac ] [INFO ] [3cfbca25b026f26d] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 40b8095f9704
+2021-06-07T07:33:42.572Z [jfac ] [INFO ] [3cfbca25b026f26d] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-05-31T07:33:42 
+2021-06-07T08:33:42.586Z [jfac ] [INFO ] [3c310c5c20ce6a92] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 40b8095f9704
+2021-06-07T08:33:42.588Z [jfac ] [INFO ] [3c310c5c20ce6a92] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-05-31T08:33:42 
+2021-06-07T09:33:42.589Z [jfac ] [INFO ] [f0d9fd617175e80e] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 40b8095f9704
+2021-06-07T09:33:42.597Z [jfac ] [INFO ] [f0d9fd617175e80e] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-05-31T09:33:42 
+2021-06-07T10:33:42.611Z [jfac ] [INFO ] [4fe7ccf3f55ea685] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 40b8095f9704
+2021-06-07T10:33:42.612Z [jfac ] [INFO ] [4fe7ccf3f55ea685] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-05-31T10:33:42 
+2021-06-07T11:33:42.623Z [jfac ] [INFO ] [eb2288f569f86d6 ] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 40b8095f9704
+2021-06-07T11:33:42.623Z [jfac ] [INFO ] [eb2288f569f86d6 ] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-05-31T11:33:42 
+2021-06-07T12:33:42.624Z [jfac ] [INFO ] [3cb0f1a79d421073] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 40b8095f9704
+2021-06-07T12:33:42.625Z [jfac ] [INFO ] [3cb0f1a79d421073] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-05-31T12:33:42 
+2021-06-07T13:33:42.626Z [jfac ] [INFO ] [72761b977a4f0fc2] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 40b8095f9704
+2021-06-07T13:33:42.628Z [jfac ] [INFO ] [72761b977a4f0fc2] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-05-31T13:33:42 
+2021-06-07T14:33:42.630Z [jfac ] [INFO ] [c6e3d1e1715d5b08] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 40b8095f9704
+2021-06-07T14:33:42.633Z [jfac ] [INFO ] [c6e3d1e1715d5b08] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-05-31T14:33:42 
+2021-06-07T15:33:42.634Z [jfac ] [INFO ] [8db800a42193f518] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 40b8095f9704
+2021-06-07T15:33:42.647Z [jfac ] [INFO ] [8db800a42193f518] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-05-31T15:33:42 
+2021-06-07T16:33:42.648Z [jfac ] [INFO ] [a5c6e1d64e1e30b5] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 40b8095f9704
+2021-06-07T16:33:42.650Z [jfac ] [INFO ] [a5c6e1d64e1e30b5] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-05-31T16:33:42 
+2021-06-07T17:33:42.652Z [jfac ] [INFO ] [cb7d4abafa8072cd] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 40b8095f9704
+2021-06-07T17:33:42.654Z [jfac ] [INFO ] [cb7d4abafa8072cd] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-05-31T17:33:42 
+2021-06-07T18:33:42.665Z [jfac ] [INFO ] [10208164ea243f80] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 40b8095f9704
+2021-06-07T18:33:42.668Z [jfac ] [INFO ] [10208164ea243f80] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-05-31T18:33:42 
+2021-06-08T05:12:28.389Z [jfac ] [WARN ] [                ] [c.z.h.p.HikariPool:787        ] [iCP Main housekeeper] - HikariCP Main - Thread starvation or clock leap detected (housekeeper delta=50s492ms453µs576ns).
+2021-06-08T05:12:28.869Z [jfac ] [INFO ] [45a4b1ec575b0d87] [o.j.a.s.s.c.s.HeartbeatJob:81 ] [jf-access-task1     ] - Refreshing server state after it was considered as stale by peers [last previous successful update 1623091119280]
+2021-06-08T05:12:28.924Z [jfac ] [INFO ] [45a4b1ec575b0d87] [CertificateFileHandlerBase:181] [jf-access-task1     ] - Loading root certificate from database.
+2021-06-08T05:12:29.920Z [jfac ] [INFO ] [                ] [.s.b.AccessProjectBootstrap:89] [pool-16-thread-6    ] - Finished initializing Projects permissions in 961.71 millis
+2021-06-08T05:12:30.054Z [jfac ] [INFO ] [45a4b1ec575b0d87] [CertificateFileHandlerBase:328] [jf-access-task1     ] - [ACCESS BOOTSTRAP] Saved new root certificate at: /opt/jfrog/artifactory/var/etc/access/keys/root.crt
+2021-06-08T05:12:30.075Z [jfac ] [INFO ] [45a4b1ec575b0d87] [CertificateFileHandlerBase:190] [jf-access-task1     ] - Finished loading root certificate from database.
+2021-06-08T05:12:30.079Z [jfac ] [INFO ] [45a4b1ec575b0d87] [CertificateFileHandlerBase:181] [jf-access-task1     ] - Loading ca certificate from database.
+2021-06-08T05:12:30.309Z [jfac ] [INFO ] [45a4b1ec575b0d87] [CertificateFileHandlerBase:328] [jf-access-task1     ] - [ACCESS BOOTSTRAP] Saved new ca certificate at: /opt/jfrog/artifactory/var/etc/access/keys/ca.crt
+2021-06-08T05:12:30.310Z [jfac ] [INFO ] [45a4b1ec575b0d87] [CertificateFileHandlerBase:190] [jf-access-task1     ] - Finished loading ca certificate from database.
+2021-06-08T05:12:30.635Z [jfac ] [INFO ] [45a4b1ec575b0d87] [alConfigurationServiceBase:182] [jf-access-task1     ] - Loading configuration from db finished successfully
+2021-06-08T05:12:32.844Z [jfac ] [INFO ] [7aa94a4caa9d2156] [.AccessImporterExporterImpl:71] [7.0.0.1-8040-exec-32] - Exporting encryption...
+2021-06-08T05:12:32.897Z [jfac ] [INFO ] [7aa94a4caa9d2156] [.AccessImporterExporterImpl:71] [7.0.0.1-8040-exec-32] - Exporting permissions...
+2021-06-08T05:12:33.045Z [jfac ] [INFO ] [7aa94a4caa9d2156] [.AccessImporterExporterImpl:71] [7.0.0.1-8040-exec-32] - Exporting users...
+2021-06-08T05:12:33.176Z [jfac ] [INFO ] [7aa94a4caa9d2156] [.AccessImporterExporterImpl:71] [7.0.0.1-8040-exec-32] - Exporting federation_events...
+2021-06-08T05:12:33.190Z [jfac ] [INFO ] [7aa94a4caa9d2156] [.AccessImporterExporterImpl:71] [7.0.0.1-8040-exec-32] - Exporting federation_servers...
+2021-06-08T05:12:33.209Z [jfac ] [INFO ] [7aa94a4caa9d2156] [.AccessImporterExporterImpl:71] [7.0.0.1-8040-exec-32] - Exporting tokens...
+2021-06-08T05:12:33.212Z [jfac ] [INFO ] [7aa94a4caa9d2156] [.d.TokenStorageServiceImpl:220] [7.0.0.1-8040-exec-32] - Filtered out 11 system tokens from export
+2021-06-08T05:12:33.224Z [jfac ] [INFO ] [7aa94a4caa9d2156] [.AccessImporterExporterImpl:71] [7.0.0.1-8040-exec-32] - Exporting groups...
+2021-06-08T05:12:33.232Z [jfac ] [INFO ] [7aa94a4caa9d2156] [.AccessImporterExporterImpl:71] [7.0.0.1-8040-exec-32] - Exporting platform_configurations...
+2021-06-08T05:12:33.291Z [jfac ] [INFO ] [7aa94a4caa9d2156] [.AccessImporterExporterImpl:71] [7.0.0.1-8040-exec-32] - Exporting config...
+2021-06-08T05:12:33.514Z [jfac ] [INFO ] [7aa94a4caa9d2156] [.AccessImporterExporterImpl:71] [7.0.0.1-8040-exec-32] - Exporting NodeIdServiceId...
+2021-06-08T06:07:01.938Z [jfac ] [INFO ] [7778f94d6b48c407] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 40b8095f9704
+2021-06-08T06:07:01.944Z [jfac ] [INFO ] [7778f94d6b48c407] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-01T06:07:01 
+2021-06-08T07:07:01.945Z [jfac ] [INFO ] [97406e54424d4a3a] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 40b8095f9704
+2021-06-08T07:07:01.946Z [jfac ] [INFO ] [97406e54424d4a3a] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-01T07:07:01 
+2021-06-08T08:07:01.957Z [jfac ] [INFO ] [d2fe8250daa82e0b] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 40b8095f9704
+2021-06-08T08:07:01.959Z [jfac ] [INFO ] [d2fe8250daa82e0b] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-01T08:07:01 
+2021-06-08T09:07:01.960Z [jfac ] [INFO ] [e332f32e81c37d33] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 40b8095f9704
+2021-06-08T09:07:01.961Z [jfac ] [INFO ] [e332f32e81c37d33] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-01T09:07:01 
+2021-06-08T10:07:01.963Z [jfac ] [INFO ] [72429b1b95a0b8ae] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 40b8095f9704
+2021-06-08T10:07:01.968Z [jfac ] [INFO ] [72429b1b95a0b8ae] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-01T10:07:01 
+2021-06-08T11:07:01.970Z [jfac ] [INFO ] [1f8ae4ba01f1cf76] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 40b8095f9704
+2021-06-08T11:07:01.971Z [jfac ] [INFO ] [1f8ae4ba01f1cf76] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-01T11:07:01 
+2021-06-08T12:07:01.973Z [jfac ] [INFO ] [6c5c0331efad2b7c] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 40b8095f9704
+2021-06-08T12:07:01.976Z [jfac ] [INFO ] [6c5c0331efad2b7c] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-01T12:07:01 
+2021-06-08T13:07:01.978Z [jfac ] [INFO ] [b8931e6cb5b7993f] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 40b8095f9704
+2021-06-08T13:07:01.979Z [jfac ] [INFO ] [b8931e6cb5b7993f] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-01T13:07:01 
+2021-06-08T14:07:01.999Z [jfac ] [INFO ] [e4a9ff2a41d9818a] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 40b8095f9704
+2021-06-08T14:07:01.999Z [jfac ] [INFO ] [e4a9ff2a41d9818a] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-01T14:07:01 
+2021-06-08T18:34:55.331Z [jfac ] [INFO ] [9762f2b27b2b43b8] [o.j.a.s.s.c.s.HeartbeatJob:81 ] [jf-access-task1     ] - Refreshing server state after it was considered as stale by peers [last previous successful update 1623164795853]
+2021-06-08T18:34:55.346Z [jfac ] [INFO ] [9762f2b27b2b43b8] [CertificateFileHandlerBase:181] [jf-access-task1     ] - Loading root certificate from database.
+2021-06-08T18:34:55.576Z [jfac ] [INFO ] [                ] [.s.b.AccessProjectBootstrap:89] [pool-16-thread-10   ] - Finished initializing Projects permissions in 162.75 millis
+2021-06-08T18:34:55.620Z [jfac ] [INFO ] [9762f2b27b2b43b8] [CertificateFileHandlerBase:328] [jf-access-task1     ] - [ACCESS BOOTSTRAP] Saved new root certificate at: /opt/jfrog/artifactory/var/etc/access/keys/root.crt
+2021-06-08T18:34:55.621Z [jfac ] [INFO ] [9762f2b27b2b43b8] [CertificateFileHandlerBase:190] [jf-access-task1     ] - Finished loading root certificate from database.
+2021-06-08T18:34:55.622Z [jfac ] [INFO ] [9762f2b27b2b43b8] [CertificateFileHandlerBase:181] [jf-access-task1     ] - Loading ca certificate from database.
+2021-06-08T18:34:55.704Z [jfac ] [INFO ] [9762f2b27b2b43b8] [CertificateFileHandlerBase:328] [jf-access-task1     ] - [ACCESS BOOTSTRAP] Saved new ca certificate at: /opt/jfrog/artifactory/var/etc/access/keys/ca.crt
+2021-06-08T18:34:55.705Z [jfac ] [INFO ] [9762f2b27b2b43b8] [CertificateFileHandlerBase:190] [jf-access-task1     ] - Finished loading ca certificate from database.
+2021-06-08T18:34:55.716Z [jfac ] [INFO ] [9762f2b27b2b43b8] [alConfigurationServiceBase:182] [jf-access-task1     ] - Loading configuration from db finished successfully
+2021-06-08T18:35:00.092Z [jfac ] [INFO ] [641c5d864db5954c] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 40b8095f9704
+2021-06-08T18:35:00.100Z [jfac ] [INFO ] [641c5d864db5954c] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-01T18:35 
+2021-06-08T19:35:00.101Z [jfac ] [INFO ] [ae3340e1b87775c9] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 40b8095f9704
+2021-06-08T19:35:00.102Z [jfac ] [INFO ] [ae3340e1b87775c9] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-01T19:35 
+2021-06-08T20:35:00.103Z [jfac ] [INFO ] [a2201619fcd79c95] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 40b8095f9704
+2021-06-08T20:35:00.106Z [jfac ] [INFO ] [a2201619fcd79c95] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-01T20:35 
+2021-06-08T21:35:00.119Z [jfac ] [INFO ] [48611d44bd59e446] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 40b8095f9704
+2021-06-08T21:35:00.119Z [jfac ] [INFO ] [48611d44bd59e446] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-01T21:35 
+2021-06-08T22:35:00.135Z [jfac ] [INFO ] [4a360970bd2429de] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 40b8095f9704
+2021-06-08T22:35:00.136Z [jfac ] [INFO ] [4a360970bd2429de] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-01T22:35 
+2021-06-08T23:35:00.149Z [jfac ] [INFO ] [41e7cbde25e2c522] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 40b8095f9704
+2021-06-08T23:35:00.149Z [jfac ] [INFO ] [41e7cbde25e2c522] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-01T23:35 
+2021-06-09T00:35:00.150Z [jfac ] [INFO ] [81004e77bbbd2ad3] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 40b8095f9704
+2021-06-09T00:35:00.161Z [jfac ] [INFO ] [81004e77bbbd2ad3] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-02T00:35 
+2021-06-09T01:35:00.164Z [jfac ] [INFO ] [4bf9b6dc96ffce0b] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 40b8095f9704
+2021-06-09T01:35:00.165Z [jfac ] [INFO ] [4bf9b6dc96ffce0b] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-02T01:35 
+2021-06-09T02:00:00.355Z [jfac ] [INFO ] [db89218ef4e3d77c] [.AccessImporterExporterImpl:71] [27.0.0.1-8040-exec-7] - Exporting encryption...
+2021-06-09T02:00:00.357Z [jfac ] [INFO ] [db89218ef4e3d77c] [.AccessImporterExporterImpl:71] [27.0.0.1-8040-exec-7] - Exporting permissions...
+2021-06-09T02:00:00.363Z [jfac ] [INFO ] [db89218ef4e3d77c] [.AccessImporterExporterImpl:71] [27.0.0.1-8040-exec-7] - Exporting users...
+2021-06-09T02:00:00.368Z [jfac ] [INFO ] [db89218ef4e3d77c] [.AccessImporterExporterImpl:71] [27.0.0.1-8040-exec-7] - Exporting federation_events...
+2021-06-09T02:00:00.369Z [jfac ] [INFO ] [db89218ef4e3d77c] [.AccessImporterExporterImpl:71] [27.0.0.1-8040-exec-7] - Exporting federation_servers...
+2021-06-09T02:00:00.369Z [jfac ] [INFO ] [db89218ef4e3d77c] [.AccessImporterExporterImpl:71] [27.0.0.1-8040-exec-7] - Exporting tokens...
+2021-06-09T02:00:00.370Z [jfac ] [INFO ] [db89218ef4e3d77c] [.d.TokenStorageServiceImpl:220] [27.0.0.1-8040-exec-7] - Filtered out 13 system tokens from export
+2021-06-09T02:00:00.371Z [jfac ] [INFO ] [db89218ef4e3d77c] [.AccessImporterExporterImpl:71] [27.0.0.1-8040-exec-7] - Exporting groups...
+2021-06-09T02:00:00.372Z [jfac ] [INFO ] [db89218ef4e3d77c] [.AccessImporterExporterImpl:71] [27.0.0.1-8040-exec-7] - Exporting platform_configurations...
+2021-06-09T02:00:00.373Z [jfac ] [INFO ] [db89218ef4e3d77c] [.AccessImporterExporterImpl:71] [27.0.0.1-8040-exec-7] - Exporting config...
+2021-06-09T02:00:00.384Z [jfac ] [INFO ] [db89218ef4e3d77c] [.AccessImporterExporterImpl:71] [27.0.0.1-8040-exec-7] - Exporting NodeIdServiceId...
+2021-06-09T02:35:00.166Z [jfac ] [INFO ] [9cf1aeb4891d5cd9] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 40b8095f9704
+2021-06-09T02:35:00.168Z [jfac ] [INFO ] [9cf1aeb4891d5cd9] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-02T02:35 
+2021-06-09T03:35:00.174Z [jfac ] [INFO ] [1cc37ea6d85f728e] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 40b8095f9704
+2021-06-09T03:35:00.177Z [jfac ] [INFO ] [1cc37ea6d85f728e] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-02T03:35 
+2021-06-09T04:35:00.179Z [jfac ] [INFO ] [c941f80213c1755b] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 40b8095f9704
+2021-06-09T04:35:00.183Z [jfac ] [INFO ] [c941f80213c1755b] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-02T04:35 
+2021-06-09T05:35:00.185Z [jfac ] [INFO ] [4f89bec9f0e3e8be] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 40b8095f9704
+2021-06-09T05:35:00.186Z [jfac ] [INFO ] [4f89bec9f0e3e8be] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-02T05:35 
+2021-06-09T06:00:00.003Z [jfac ] [INFO ] [b4f98d76837f4953] [j.a.s.s.t.TokenServiceImpl:148] [jf-access-task1     ] - Revoked 2 expired tokens.
+2021-06-09T06:35:00.190Z [jfac ] [INFO ] [befb5056cd952d6f] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 40b8095f9704
+2021-06-09T06:35:00.195Z [jfac ] [INFO ] [befb5056cd952d6f] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-02T06:35 
+2021-06-09T07:35:00.197Z [jfac ] [INFO ] [60151365511cb632] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 40b8095f9704
+2021-06-09T07:35:00.197Z [jfac ] [INFO ] [60151365511cb632] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-02T07:35 
+2021-06-09T08:35:00.221Z [jfac ] [INFO ] [c11bba930856d16d] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 40b8095f9704
+2021-06-09T08:35:00.221Z [jfac ] [INFO ] [c11bba930856d16d] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-02T08:35 
+2021-06-09T09:35:00.222Z [jfac ] [INFO ] [3ba24e0ecee1c1a7] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 40b8095f9704
+2021-06-09T09:35:00.224Z [jfac ] [INFO ] [3ba24e0ecee1c1a7] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-02T09:35 
+2021-06-09T10:35:00.225Z [jfac ] [INFO ] [494926d11c8687cb] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 40b8095f9704
+2021-06-09T10:35:00.229Z [jfac ] [INFO ] [494926d11c8687cb] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-02T10:35 
+2021-06-09T11:35:00.230Z [jfac ] [INFO ] [ef82f495c5003e7d] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 40b8095f9704
+2021-06-09T11:35:00.231Z [jfac ] [INFO ] [ef82f495c5003e7d] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-02T11:35 
+2021-06-09T12:35:00.233Z [jfac ] [INFO ] [4b6c2e50a986abb3] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 40b8095f9704
+2021-06-09T12:35:00.234Z [jfac ] [INFO ] [4b6c2e50a986abb3] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-02T12:35 
+2021-06-09T13:35:00.235Z [jfac ] [INFO ] [95ffa73e7011c78 ] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 40b8095f9704
+2021-06-09T13:35:00.236Z [jfac ] [INFO ] [95ffa73e7011c78 ] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-02T13:35 
+2021-06-09T14:35:00.252Z [jfac ] [INFO ] [552e3e56212c7ab3] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 40b8095f9704
+2021-06-09T14:35:00.253Z [jfac ] [INFO ] [552e3e56212c7ab3] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-02T14:35 
+2021-06-09T15:35:00.263Z [jfac ] [INFO ] [a4a3fc02c190db3f] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 40b8095f9704
+2021-06-09T15:35:00.264Z [jfac ] [INFO ] [a4a3fc02c190db3f] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-02T15:35 
+2021-06-09T16:34:58.523Z [jfac ] [INFO ] [8a4c84d64ae56666] [o.j.a.s.s.c.s.HeartbeatJob:81 ] [jf-access-task1     ] - Refreshing server state after it was considered as stale by peers [last previous successful update 1623256392738]
+2021-06-09T16:34:58.801Z [jfac ] [INFO ] [8a4c84d64ae56666] [CertificateFileHandlerBase:181] [jf-access-task1     ] - Loading root certificate from database.
+2021-06-09T16:34:59.703Z [jfac ] [INFO ] [8a4c84d64ae56666] [CertificateFileHandlerBase:328] [jf-access-task1     ] - [ACCESS BOOTSTRAP] Saved new root certificate at: /opt/jfrog/artifactory/var/etc/access/keys/root.crt
+2021-06-09T16:34:59.880Z [jfac ] [INFO ] [8a4c84d64ae56666] [CertificateFileHandlerBase:190] [jf-access-task1     ] - Finished loading root certificate from database.
+2021-06-09T16:34:59.889Z [jfac ] [INFO ] [8a4c84d64ae56666] [CertificateFileHandlerBase:181] [jf-access-task1     ] - Loading ca certificate from database.
+2021-06-09T16:35:00.130Z [jfac ] [INFO ] [8a4c84d64ae56666] [CertificateFileHandlerBase:328] [jf-access-task1     ] - [ACCESS BOOTSTRAP] Saved new ca certificate at: /opt/jfrog/artifactory/var/etc/access/keys/ca.crt
+2021-06-09T16:35:00.133Z [jfac ] [INFO ] [8a4c84d64ae56666] [CertificateFileHandlerBase:190] [jf-access-task1     ] - Finished loading ca certificate from database.
+2021-06-09T16:35:00.198Z [jfac ] [INFO ] [8a4c84d64ae56666] [alConfigurationServiceBase:182] [jf-access-task1     ] - Loading configuration from db finished successfully
+2021-06-09T16:35:00.549Z [jfac ] [INFO ] [829448dd222a9dbc] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 40b8095f9704
+2021-06-09T16:35:00.558Z [jfac ] [INFO ] [829448dd222a9dbc] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-02T16:35 
+2021-06-09T16:35:00.652Z [jfac ] [INFO ] [                ] [.s.b.AccessProjectBootstrap:89] [pool-16-thread-14   ] - Finished initializing Projects permissions in 2.02 secs
+2021-06-09T17:35:00.560Z [jfac ] [INFO ] [6b060773b5b43c7b] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 40b8095f9704
+2021-06-09T17:35:00.564Z [jfac ] [INFO ] [6b060773b5b43c7b] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-02T17:35 
+2021-06-09T17:41:09.263Z [jfac ] [INFO ] [b4f5eaa777c8c056] [o.j.a.s.s.c.s.HeartbeatJob:81 ] [jf-access-task1     ] - Refreshing server state after it was considered as stale by peers [last previous successful update 1623260436802]
+2021-06-09T17:41:09.295Z [jfac ] [INFO ] [b4f5eaa777c8c056] [CertificateFileHandlerBase:181] [jf-access-task1     ] - Loading root certificate from database.
+2021-06-09T17:41:09.409Z [jfac ] [INFO ] [                ] [.s.b.AccessProjectBootstrap:89] [pool-16-thread-15   ] - Finished initializing Projects permissions in 65.13 millis
+2021-06-09T17:41:09.426Z [jfac ] [INFO ] [b4f5eaa777c8c056] [CertificateFileHandlerBase:328] [jf-access-task1     ] - [ACCESS BOOTSTRAP] Saved new root certificate at: /opt/jfrog/artifactory/var/etc/access/keys/root.crt
+2021-06-09T17:41:09.437Z [jfac ] [INFO ] [b4f5eaa777c8c056] [CertificateFileHandlerBase:190] [jf-access-task1     ] - Finished loading root certificate from database.
+2021-06-09T17:41:09.453Z [jfac ] [INFO ] [b4f5eaa777c8c056] [CertificateFileHandlerBase:181] [jf-access-task1     ] - Loading ca certificate from database.
+2021-06-09T17:41:09.553Z [jfac ] [INFO ] [b4f5eaa777c8c056] [CertificateFileHandlerBase:328] [jf-access-task1     ] - [ACCESS BOOTSTRAP] Saved new ca certificate at: /opt/jfrog/artifactory/var/etc/access/keys/ca.crt
+2021-06-09T17:41:09.555Z [jfac ] [INFO ] [b4f5eaa777c8c056] [CertificateFileHandlerBase:190] [jf-access-task1     ] - Finished loading ca certificate from database.
+2021-06-09T17:41:09.577Z [jfac ] [INFO ] [b4f5eaa777c8c056] [alConfigurationServiceBase:182] [jf-access-task1     ] - Loading configuration from db finished successfully
+2021-06-09T17:41:17.716Z [jfac ] [INFO ] [                ] [CertificateFileHandlerBase:181] [efault-executor-1841] - Loading root certificate from database.
+2021-06-09T17:41:17.823Z [jfac ] [INFO ] [                ] [.s.b.AccessProjectBootstrap:89] [pool-16-thread-15   ] - Finished initializing Projects permissions in 106.82 millis
+2021-06-09T17:41:17.931Z [jfac ] [INFO ] [                ] [CertificateFileHandlerBase:328] [efault-executor-1841] - [ACCESS BOOTSTRAP] Saved new root certificate at: /opt/jfrog/artifactory/var/etc/access/keys/root.crt
+2021-06-09T17:41:17.945Z [jfac ] [INFO ] [                ] [CertificateFileHandlerBase:190] [efault-executor-1841] - Finished loading root certificate from database.
+2021-06-09T17:41:17.947Z [jfac ] [INFO ] [                ] [CertificateFileHandlerBase:181] [efault-executor-1841] - Loading ca certificate from database.
+2021-06-09T17:41:18.046Z [jfac ] [INFO ] [                ] [CertificateFileHandlerBase:328] [efault-executor-1841] - [ACCESS BOOTSTRAP] Saved new ca certificate at: /opt/jfrog/artifactory/var/etc/access/keys/ca.crt
+2021-06-09T17:41:18.060Z [jfac ] [INFO ] [                ] [CertificateFileHandlerBase:190] [efault-executor-1841] - Finished loading ca certificate from database.
+2021-06-09T17:41:18.096Z [jfac ] [INFO ] [                ] [alConfigurationServiceBase:182] [efault-executor-1841] - Loading configuration from db finished successfully
+2021-06-09T17:42:21.523Z [jfac ] [WARN ] [19b7ee2b9909b39d] [.RpcServiceRegistryResource:82] [efault-executor-1841] - got error from topology heartbeat: ERROR: CANCELLED: cancelled before receiving half close
+2021-06-09T17:43:15.554Z [jfac ] [WARN ] [71bbb87128e51de0] [.RpcServiceRegistryResource:82] [efault-executor-1841] - got error from topology heartbeat: ERROR: CANCELLED: cancelled before receiving half close
+2021-06-09T17:44:32.320Z [jfac ] [WARN ] [5973d5acc970cc8e] [.RpcServiceRegistryResource:82] [efault-executor-1845] - got error from topology heartbeat: ERROR: CANCELLED: cancelled before receiving half close
+2021-06-09T17:44:37.148Z [jfac ] [INFO ] [                ] [CertificateFileHandlerBase:181] [efault-executor-1846] - Loading root certificate from database.
+2021-06-09T17:44:37.151Z [jfac ] [INFO ] [                ] [.s.b.AccessProjectBootstrap:89] [pool-16-thread-16   ] - Finished initializing Projects permissions in 2.56 millis
+2021-06-09T17:44:37.195Z [jfac ] [INFO ] [                ] [CertificateFileHandlerBase:328] [efault-executor-1846] - [ACCESS BOOTSTRAP] Saved new root certificate at: /opt/jfrog/artifactory/var/etc/access/keys/root.crt
+2021-06-09T17:44:37.195Z [jfac ] [INFO ] [                ] [CertificateFileHandlerBase:190] [efault-executor-1846] - Finished loading root certificate from database.
+2021-06-09T17:44:37.198Z [jfac ] [INFO ] [                ] [CertificateFileHandlerBase:181] [efault-executor-1846] - Loading ca certificate from database.
+2021-06-09T17:44:37.240Z [jfac ] [INFO ] [                ] [CertificateFileHandlerBase:328] [efault-executor-1846] - [ACCESS BOOTSTRAP] Saved new ca certificate at: /opt/jfrog/artifactory/var/etc/access/keys/ca.crt
+2021-06-09T17:44:37.241Z [jfac ] [INFO ] [                ] [CertificateFileHandlerBase:190] [efault-executor-1846] - Finished loading ca certificate from database.
+2021-06-09T17:44:37.245Z [jfac ] [INFO ] [                ] [alConfigurationServiceBase:182] [efault-executor-1846] - Loading configuration from db finished successfully
+2021-06-09T18:35:00.578Z [jfac ] [INFO ] [774c824fb1e870e7] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 40b8095f9704
+2021-06-09T18:35:00.580Z [jfac ] [INFO ] [774c824fb1e870e7] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-02T18:35 
+2021-06-11T08:45:56.226Z [jfac ] [INFO ] [ec773bd5fdf12ef6] [licationContextInitializer:162] [ocalhost-startStop-1] - Access (jfac) service initialization started. Version: 7.19.4 Revision: 71904900 PID: 3568 Home: /opt/jfrog/artifactory
+2021-06-11T08:45:56.286Z [jfac ] [INFO ] [ec773bd5fdf12ef6] [o.j.a.AccessApplication:50    ] [ocalhost-startStop-1] - Starting AccessApplication v7.19.4 on 4dc91af1c536 with PID 3568 (/opt/jfrog/artifactory/app/artifactory/tomcat/webapps/access/WEB-INF/lib/access-application-7.19.4.jar started by artifactory in /var/opt/jfrog/artifactory)
+2021-06-11T08:45:56.287Z [jfac ] [INFO ] [ec773bd5fdf12ef6] [o.j.a.AccessApplication:652   ] [ocalhost-startStop-1] - The following profiles are active: production
+2021-06-11T08:45:56.402Z [jfac ] [WARN ] [                ] [ackson2ObjectMapperBuilder:836] [background-preinit  ] - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2021-06-11T08:45:59.747Z [jfac ] [WARN ] [ec773bd5fdf12ef6] [c.z.h.u.DriverDataSource:70   ] [ocalhost-startStop-1] - Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
+2021-06-11T08:45:59.781Z [jfac ] [INFO ] [ec773bd5fdf12ef6] [s.d.u.AccessJdbcHelperImpl:140] [ocalhost-startStop-1] - Database: Apache Derby 10.14.2.0 - (1828579). Driver: Apache Derby Embedded JDBC Driver 10.14.2.0 - (1828579)
+2021-06-11T08:46:00.897Z [jfac ] [INFO ] [ec773bd5fdf12ef6] [alConfigurationServiceBase:182] [ocalhost-startStop-1] - Loading configuration from db finished successfully
+2021-06-11T08:46:01.131Z [jfac ] [INFO ] [ec773bd5fdf12ef6] [alConfigurationServiceBase:114] [ocalhost-startStop-1] - Current configurations are the same as the new configurations, no need for an update. No action was taken.
+2021-06-11T08:46:01.545Z [jfac ] [INFO ] [ec773bd5fdf12ef6] [.h.AccessNodeIdProviderImpl:73] [ocalhost-startStop-1] - Service id initialized: jfac@01f7bx19j4gse11x6zk7h10p62
+2021-06-11T08:46:02.177Z [jfac ] [INFO ] [ec773bd5fdf12ef6] [j.a.s.s.t.TokenServiceImpl:111] [ocalhost-startStop-1] - Scheduling task for revoking expired tokens using cron expression: 0 0 0/1 * * ?
+2021-06-11T08:46:02.592Z [jfac ] [INFO ] [ec773bd5fdf12ef6] [b.AccessServerBootstrapImpl:43] [ocalhost-startStop-1] - [ACCESS BOOTSTRAP] Starting JFrog Access bootstrap...
+2021-06-11T08:46:02.596Z [jfac ] [INFO ] [ec773bd5fdf12ef6] [CertificateFileHandlerBase:115] [ocalhost-startStop-1] - [ACCESS BOOTSTRAP] Initializing root certificate.
+2021-06-11T08:46:02.994Z [jfac ] [INFO ] [ec773bd5fdf12ef6] [CertificateFileHandlerBase:328] [ocalhost-startStop-1] - [ACCESS BOOTSTRAP] Saved new root certificate at: /opt/jfrog/artifactory/var/etc/access/keys/root.crt
+2021-06-11T08:46:02.997Z [jfac ] [INFO ] [ec773bd5fdf12ef6] [CertificateFileHandlerBase:132] [ocalhost-startStop-1] - [ACCESS BOOTSTRAP] Finished initializing root certificate. Certificate source: DATABASE
+2021-06-11T08:46:02.998Z [jfac ] [INFO ] [ec773bd5fdf12ef6] [CertificateFileHandlerBase:115] [ocalhost-startStop-1] - [ACCESS BOOTSTRAP] Initializing ca certificate.
+2021-06-11T08:46:03.074Z [jfac ] [INFO ] [ec773bd5fdf12ef6] [CertificateFileHandlerBase:328] [ocalhost-startStop-1] - [ACCESS BOOTSTRAP] Saved new ca certificate at: /opt/jfrog/artifactory/var/etc/access/keys/ca.crt
+2021-06-11T08:46:03.075Z [jfac ] [INFO ] [ec773bd5fdf12ef6] [CertificateFileHandlerBase:132] [ocalhost-startStop-1] - [ACCESS BOOTSTRAP] Finished initializing ca certificate. Certificate source: DATABASE
+2021-06-11T08:46:03.279Z [jfac ] [INFO ] [ec773bd5fdf12ef6] [.s.b.AccessProjectBootstrap:76] [ocalhost-startStop-1] - Finished initializing Projects Entities in 23.62 millis
+2021-06-11T08:46:03.282Z [jfac ] [INFO ] [ec773bd5fdf12ef6] [.s.b.AccessProjectBootstrap:69] [ocalhost-startStop-1] - Finished initializing Projects Shared Entities in 2.63 millis
+2021-06-11T08:46:03.317Z [jfac ] [INFO ] [ec773bd5fdf12ef6] [.s.b.AccessProjectBootstrap:89] [ocalhost-startStop-1] - Finished initializing Projects permissions in 34.27 millis
+2021-06-11T08:46:03.317Z [jfac ] [INFO ] [ec773bd5fdf12ef6] [.s.b.AccessProjectBootstrap:61] [ocalhost-startStop-1] - Finished initializing Projects in 66.72 millis
+2021-06-11T08:46:03.317Z [jfac ] [INFO ] [ec773bd5fdf12ef6] [.a.s.s.m.MetricsServiceImpl:47] [ocalhost-startStop-1] - Metrics Framework Service is disabled
+2021-06-11T08:46:03.318Z [jfac ] [INFO ] [ec773bd5fdf12ef6] [b.AccessServerBootstrapImpl:52] [ocalhost-startStop-1] - [ACCESS BOOTSTRAP] JFrog Access bootstrap finished.
+2021-06-11T08:46:04.458Z [jfac ] [INFO ] [ec773bd5fdf12ef6] [o.j.a.s.r.s.GrpcServerImpl:65 ] [ocalhost-startStop-1] - Starting gRPC Server on port 8045
+2021-06-11T08:46:04.744Z [jfac ] [INFO ] [ec773bd5fdf12ef6] [o.j.a.s.r.s.GrpcServerImpl:84 ] [ocalhost-startStop-1] - gRPC Server started, listening on 8045
+2021-06-11T08:46:04.756Z [jfac ] [INFO ] [ec773bd5fdf12ef6] [o.j.a.s.s.JoinKeyAccess:172   ] [ocalhost-startStop-1] - Cluster join: Join key loaded successfully (from: /opt/jfrog/artifactory/var/etc/security/join.key)
+2021-06-11T08:46:04.811Z [jfac ] [INFO ] [ec773bd5fdf12ef6] [a.s.b.AccessServerRegistrar:66] [ocalhost-startStop-1] - [ACCESS BOOTSTRAP] Starting JFrog Access registrar...
+2021-06-11T08:46:04.846Z [jfac ] [INFO ] [c23390f172295a57] [a.c.RefreshableScheduledJob:53] [ocalhost-startStop-1] - Scheduling loadCertificates task to run every 30 seconds
+2021-06-11T08:46:04.892Z [jfac ] [INFO ] [baaaf4eb8e8c378d] [a.c.RefreshableScheduledJob:53] [ocalhost-startStop-1] - Scheduling heartbeat task to run every 5 seconds
+2021-06-11T08:46:04.896Z [jfac ] [INFO ] [baaaf4eb8e8c378d] [a.c.RefreshableScheduledJob:53] [ocalhost-startStop-1] - Scheduling federationCleanupService task to run every 1209600 seconds
+2021-06-11T08:46:04.907Z [jfac ] [INFO ] [baaaf4eb8e8c378d] [a.c.RefreshableScheduledJob:53] [ocalhost-startStop-1] - Scheduling staleTokenCleanup task to run every 3600 seconds
+2021-06-11T08:46:06.298Z [jfac ] [INFO ] [baaaf4eb8e8c378d] [o.j.a.AccessApplication:59    ] [ocalhost-startStop-1] - Started AccessApplication in 11.60180566 seconds (JVM running for 16.095)
+2021-06-11T08:46:08.180Z [jfac ] [WARN ] [2554e79265dc0cf0] [c.z.h.u.DriverDataSource:70   ] [27.0.0.1-8040-exec-3] - Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
+2021-06-11T08:46:08.441Z [jfac ] [INFO ] [2554e79265dc0cf0] [s.r.NodeRegistryServiceImpl:68] [27.0.0.1-8040-exec-3] - Cluster join: Successfully joined jfrou@01f7bx1pe9qecxd1dj698wp1v5 with node id 4dc91af1c536
+2021-06-11T08:46:10.590Z [jfac ] [INFO ] [ec773bd5fdf12ef6] [.AccessWithRouterRegistrar:111] [pool-26-thread-1    ] - Access Server successfully registered on Router on URL: http://localhost:8046
+2021-06-11T08:46:11.523Z [jfac ] [INFO ] [ec773bd5fdf12ef6] [.s.b.AccessServerRegistrar:121] [pool-26-thread-1    ] - [ACCESS BOOTSTRAP] Updating server '4dc91af1c536' private key finger print to: 3057f7adbe70d14b62c8f0b7ef5832d86049596f246e1ea7d4c1696874cb3b7e ca private key finger print to: 2915bad9070fbf102e448da44c962aa21b219a386059398bf6812af84f8f4eb9
+2021-06-11T08:46:11.549Z [jfac ] [INFO ] [2f1e5ed092e6c135] [s.r.NodeRegistryServiceImpl:68] [27.0.0.1-8040-exec-6] - Cluster join: Successfully joined jfmd@01f7bx1qtktj5dgrd7t445jeh2 with node id 4dc91af1c536
+2021-06-11T08:46:11.555Z [jfac ] [INFO ] [ec773bd5fdf12ef6] [a.s.b.AccessServerRegistrar:77] [pool-26-thread-1    ] - [ACCESS BOOTSTRAP] JFrog Access registrar finished.
+2021-06-11T08:46:12.048Z [jfac ] [INFO ] [68639eecaa3e42b1] [s.r.NodeRegistryServiceImpl:68] [27.0.0.1-8040-exec-7] - Cluster join: Successfully joined jfevt@01f7bx19j4gse11x6zk7h10p62 with node id 4dc91af1c536
+2021-06-11T08:46:13.316Z [jfac ] [INFO ] [368107972c202262] [s.r.NodeRegistryServiceImpl:68] [27.0.0.1-8040-exec-1] - Cluster join: Successfully joined jfrt@01f7bx52m3966z1w8h4npq0tdb with node id 4dc91af1c536
+2021-06-11T08:46:23.209Z [jfac ] [INFO ] [6e23b57b9a49ddf7] [s.r.NodeRegistryServiceImpl:68] [27.0.0.1-8040-exec-8] - Cluster join: Successfully joined jffe@000 with node id 4dc91af1c536
+2021-06-11T08:46:29.054Z [jfac ] [INFO ] [ec773bd5fdf12ef6] [.s.b.AccessProjectBootstrap:89] [pool-26-thread-1    ] - Finished initializing Projects permissions in 18.85 millis
+2021-06-11T08:46:29.075Z [jfac ] [INFO ] [                ] [CertificateFileHandlerBase:181] [c-default-executor-2] - Loading root certificate from database.
+2021-06-11T08:46:29.117Z [jfac ] [INFO ] [                ] [CertificateFileHandlerBase:328] [c-default-executor-2] - [ACCESS BOOTSTRAP] Saved new root certificate at: /opt/jfrog/artifactory/var/etc/access/keys/root.crt
+2021-06-11T08:46:29.117Z [jfac ] [INFO ] [                ] [CertificateFileHandlerBase:190] [c-default-executor-2] - Finished loading root certificate from database.
+2021-06-11T08:46:29.117Z [jfac ] [INFO ] [                ] [CertificateFileHandlerBase:181] [c-default-executor-2] - Loading ca certificate from database.
+2021-06-11T08:46:29.158Z [jfac ] [INFO ] [                ] [CertificateFileHandlerBase:328] [c-default-executor-2] - [ACCESS BOOTSTRAP] Saved new ca certificate at: /opt/jfrog/artifactory/var/etc/access/keys/ca.crt
+2021-06-11T08:46:29.159Z [jfac ] [INFO ] [                ] [CertificateFileHandlerBase:190] [c-default-executor-2] - Finished loading ca certificate from database.
+2021-06-11T08:46:29.162Z [jfac ] [INFO ] [                ] [alConfigurationServiceBase:182] [c-default-executor-2] - Loading configuration from db finished successfully
+2021-06-11T09:00:00.019Z [jfac ] [INFO ] [b78823b2970dd41a] [j.a.s.s.t.TokenServiceImpl:148] [jf-access-task1     ] - Revoked 8 expired tokens.
+2021-06-11T09:46:04.909Z [jfac ] [INFO ] [3e36cb7950584adb] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-11T09:46:04.922Z [jfac ] [INFO ] [3e36cb7950584adb] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-04T09:46:04 
+2021-06-11T10:46:04.923Z [jfac ] [INFO ] [4d4bca192c3e769e] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-11T10:46:04.925Z [jfac ] [INFO ] [4d4bca192c3e769e] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-04T10:46:04 
+2021-06-11T11:46:04.926Z [jfac ] [INFO ] [e2b959948d23a5c9] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-11T11:46:04.929Z [jfac ] [INFO ] [e2b959948d23a5c9] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-04T11:46:04 
+2021-06-11T12:46:04.958Z [jfac ] [INFO ] [a3c7e1de488611c9] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-11T12:46:04.959Z [jfac ] [INFO ] [a3c7e1de488611c9] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-04T12:46:04 
+2021-06-11T13:46:04.989Z [jfac ] [INFO ] [8d8656817c2808bd] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-11T13:46:04.990Z [jfac ] [INFO ] [8d8656817c2808bd] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-04T13:46:04 
+2021-06-11T14:19:03.727Z [jfac ] [WARN ] [                ] [c.z.h.p.HikariPool:787        ] [P Unique housekeeper] - HikariCP Unique - Thread starvation or clock leap detected (housekeeper delta=15m24s284ms723µs728ns).
+2021-06-11T14:19:03.741Z [jfac ] [WARN ] [                ] [c.z.h.p.HikariPool:787        ] [iCP Main housekeeper] - HikariCP Main - Thread starvation or clock leap detected (housekeeper delta=15m2s582ms266µs307ns).
+2021-06-11T14:19:04.757Z [jfac ] [INFO ] [750b5bcfe1889fb1] [o.j.a.s.s.c.s.HeartbeatJob:81 ] [jf-access-task1     ] - Refreshing server state after it was considered as stale by peers [last previous successful update 1623420244552]
+2021-06-11T14:19:04.886Z [jfac ] [INFO ] [750b5bcfe1889fb1] [CertificateFileHandlerBase:181] [jf-access-task1     ] - Loading root certificate from database.
+2021-06-11T14:19:05.441Z [jfac ] [INFO ] [750b5bcfe1889fb1] [CertificateFileHandlerBase:328] [jf-access-task1     ] - [ACCESS BOOTSTRAP] Saved new root certificate at: /opt/jfrog/artifactory/var/etc/access/keys/root.crt
+2021-06-11T14:19:05.442Z [jfac ] [INFO ] [750b5bcfe1889fb1] [CertificateFileHandlerBase:190] [jf-access-task1     ] - Finished loading root certificate from database.
+2021-06-11T14:19:05.443Z [jfac ] [INFO ] [750b5bcfe1889fb1] [CertificateFileHandlerBase:181] [jf-access-task1     ] - Loading ca certificate from database.
+2021-06-11T14:19:05.472Z [jfac ] [INFO ] [                ] [.s.b.AccessProjectBootstrap:89] [pool-26-thread-4    ] - Finished initializing Projects permissions in 394.51 millis
+2021-06-11T14:19:05.591Z [jfac ] [INFO ] [750b5bcfe1889fb1] [CertificateFileHandlerBase:328] [jf-access-task1     ] - [ACCESS BOOTSTRAP] Saved new ca certificate at: /opt/jfrog/artifactory/var/etc/access/keys/ca.crt
+2021-06-11T14:19:05.592Z [jfac ] [INFO ] [750b5bcfe1889fb1] [CertificateFileHandlerBase:190] [jf-access-task1     ] - Finished loading ca certificate from database.
+2021-06-11T14:19:05.599Z [jfac ] [INFO ] [750b5bcfe1889fb1] [alConfigurationServiceBase:182] [jf-access-task1     ] - Loading configuration from db finished successfully
+2021-06-11T15:29:36.873Z [jfac ] [WARN ] [                ] [c.z.h.p.HikariPool:787        ] [P Unique housekeeper] - HikariCP Unique - Thread starvation or clock leap detected (housekeeper delta=1h10m33s146ms852µs485ns).
+2021-06-11T15:29:36.873Z [jfac ] [WARN ] [                ] [c.z.h.p.HikariPool:787        ] [iCP Main housekeeper] - HikariCP Main - Thread starvation or clock leap detected (housekeeper delta=1h10m33s132ms77µs825ns).
+2021-06-11T15:29:38.750Z [jfac ] [INFO ] [d77fe9552d92e8c9] [o.j.a.s.s.c.s.HeartbeatJob:81 ] [jf-access-task1     ] - Refreshing server state after it was considered as stale by peers [last previous successful update 1623421144746]
+2021-06-11T15:29:38.758Z [jfac ] [INFO ] [d77fe9552d92e8c9] [CertificateFileHandlerBase:181] [jf-access-task1     ] - Loading root certificate from database.
+2021-06-11T15:29:38.855Z [jfac ] [INFO ] [d77fe9552d92e8c9] [CertificateFileHandlerBase:328] [jf-access-task1     ] - [ACCESS BOOTSTRAP] Saved new root certificate at: /opt/jfrog/artifactory/var/etc/access/keys/root.crt
+2021-06-11T15:29:38.856Z [jfac ] [INFO ] [d77fe9552d92e8c9] [CertificateFileHandlerBase:190] [jf-access-task1     ] - Finished loading root certificate from database.
+2021-06-11T15:29:38.858Z [jfac ] [INFO ] [d77fe9552d92e8c9] [CertificateFileHandlerBase:181] [jf-access-task1     ] - Loading ca certificate from database.
+2021-06-11T15:29:38.919Z [jfac ] [INFO ] [                ] [.s.b.AccessProjectBootstrap:89] [pool-26-thread-6    ] - Finished initializing Projects permissions in 143.97 millis
+2021-06-11T15:29:39.010Z [jfac ] [INFO ] [d77fe9552d92e8c9] [CertificateFileHandlerBase:328] [jf-access-task1     ] - [ACCESS BOOTSTRAP] Saved new ca certificate at: /opt/jfrog/artifactory/var/etc/access/keys/ca.crt
+2021-06-11T15:29:39.022Z [jfac ] [INFO ] [d77fe9552d92e8c9] [CertificateFileHandlerBase:190] [jf-access-task1     ] - Finished loading ca certificate from database.
+2021-06-11T15:29:39.026Z [jfac ] [INFO ] [d77fe9552d92e8c9] [alConfigurationServiceBase:182] [jf-access-task1     ] - Loading configuration from db finished successfully
+2021-06-11T15:29:39.040Z [jfac ] [INFO ] [fa927427bf03fcdd] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-11T15:29:39.041Z [jfac ] [INFO ] [fa927427bf03fcdd] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-04T15:29:39 
+2021-06-11T16:29:39.061Z [jfac ] [INFO ] [6af17fd2a5d08004] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-11T16:29:39.122Z [jfac ] [INFO ] [6af17fd2a5d08004] [.r.NodeRegistryServiceImpl:128] [jf-access-task1     ] - Cluster join: Token null not found, ignoring revoke
+2021-06-11T16:29:39.151Z [jfac ] [INFO ] [6af17fd2a5d08004] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 3 Stale Nodes and 3 Join-Admin-Tokens from before: 2021-06-04T16:29:39 
+2021-06-11T17:29:39.153Z [jfac ] [INFO ] [4f5dccc59f79b068] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-11T17:29:39.187Z [jfac ] [INFO ] [4f5dccc59f79b068] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-04T17:29:39 
+2021-06-11T20:03:14.846Z [jfac ] [INFO ] [44b3e71703dd5cae] [o.j.a.s.s.c.s.HeartbeatJob:81 ] [jf-access-task1     ] - Refreshing server state after it was considered as stale by peers [last previous successful update 1623435677383]
+2021-06-11T20:03:16.206Z [jfac ] [INFO ] [44b3e71703dd5cae] [CertificateFileHandlerBase:181] [jf-access-task1     ] - Loading root certificate from database.
+2021-06-11T20:03:16.493Z [jfac ] [INFO ] [                ] [.s.b.AccessProjectBootstrap:89] [pool-26-thread-9    ] - Finished initializing Projects permissions in 683.68 millis
+2021-06-11T20:03:17.225Z [jfac ] [INFO ] [44b3e71703dd5cae] [CertificateFileHandlerBase:328] [jf-access-task1     ] - [ACCESS BOOTSTRAP] Saved new root certificate at: /opt/jfrog/artifactory/var/etc/access/keys/root.crt
+2021-06-11T20:03:17.238Z [jfac ] [INFO ] [44b3e71703dd5cae] [CertificateFileHandlerBase:190] [jf-access-task1     ] - Finished loading root certificate from database.
+2021-06-11T20:03:17.240Z [jfac ] [INFO ] [44b3e71703dd5cae] [CertificateFileHandlerBase:181] [jf-access-task1     ] - Loading ca certificate from database.
+2021-06-11T20:03:17.316Z [jfac ] [INFO ] [44b3e71703dd5cae] [CertificateFileHandlerBase:328] [jf-access-task1     ] - [ACCESS BOOTSTRAP] Saved new ca certificate at: /opt/jfrog/artifactory/var/etc/access/keys/ca.crt
+2021-06-11T20:03:17.317Z [jfac ] [INFO ] [44b3e71703dd5cae] [CertificateFileHandlerBase:190] [jf-access-task1     ] - Finished loading ca certificate from database.
+2021-06-11T20:03:17.422Z [jfac ] [INFO ] [44b3e71703dd5cae] [alConfigurationServiceBase:182] [jf-access-task1     ] - Loading configuration from db finished successfully
+2021-06-11T20:11:16.051Z [jfac ] [INFO ] [bc5be2d9d2cad610] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-11T20:11:16.055Z [jfac ] [INFO ] [bc5be2d9d2cad610] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-04T20:11:16 
+2021-06-12T14:30:48.857Z [jfac ] [INFO ] [99e719bbf262122 ] [o.j.a.s.s.c.s.HeartbeatJob:81 ] [jf-access-task1     ] - Refreshing server state after it was considered as stale by peers [last previous successful update 1623442712444]
+2021-06-12T14:30:49.104Z [jfac ] [INFO ] [99e719bbf262122 ] [CertificateFileHandlerBase:181] [jf-access-task1     ] - Loading root certificate from database.
+2021-06-12T14:30:49.512Z [jfac ] [INFO ] [                ] [.s.b.AccessProjectBootstrap:89] [pool-26-thread-10   ] - Finished initializing Projects permissions in 407.63 millis
+2021-06-12T14:30:49.766Z [jfac ] [INFO ] [99e719bbf262122 ] [CertificateFileHandlerBase:328] [jf-access-task1     ] - [ACCESS BOOTSTRAP] Saved new root certificate at: /opt/jfrog/artifactory/var/etc/access/keys/root.crt
+2021-06-12T14:30:49.775Z [jfac ] [INFO ] [99e719bbf262122 ] [CertificateFileHandlerBase:190] [jf-access-task1     ] - Finished loading root certificate from database.
+2021-06-12T14:30:49.775Z [jfac ] [INFO ] [99e719bbf262122 ] [CertificateFileHandlerBase:181] [jf-access-task1     ] - Loading ca certificate from database.
+2021-06-12T14:30:50.023Z [jfac ] [INFO ] [99e719bbf262122 ] [CertificateFileHandlerBase:328] [jf-access-task1     ] - [ACCESS BOOTSTRAP] Saved new ca certificate at: /opt/jfrog/artifactory/var/etc/access/keys/ca.crt
+2021-06-12T14:30:50.026Z [jfac ] [INFO ] [99e719bbf262122 ] [CertificateFileHandlerBase:190] [jf-access-task1     ] - Finished loading ca certificate from database.
+2021-06-12T14:30:50.052Z [jfac ] [INFO ] [99e719bbf262122 ] [alConfigurationServiceBase:182] [jf-access-task1     ] - Loading configuration from db finished successfully
+2021-06-12T15:23:12.472Z [jfac ] [INFO ] [3fc31273138b1de9] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-12T15:23:12.473Z [jfac ] [INFO ] [3fc31273138b1de9] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-05T15:23:12 
+2021-06-12T16:23:12.491Z [jfac ] [INFO ] [76d7a9e55f6a78d0] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-12T16:23:12.492Z [jfac ] [INFO ] [76d7a9e55f6a78d0] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-05T16:23:12 
+2021-06-12T17:23:12.503Z [jfac ] [INFO ] [62fda210dae9ea7f] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-12T17:23:12.504Z [jfac ] [INFO ] [62fda210dae9ea7f] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-05T17:23:12 
+2021-06-12T18:23:12.505Z [jfac ] [INFO ] [74da4de8ba8da4d9] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-12T18:23:12.505Z [jfac ] [INFO ] [74da4de8ba8da4d9] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-05T18:23:12 
+2021-06-12T19:00:00.006Z [jfac ] [INFO ] [38fee914b26d4f41] [j.a.s.s.t.TokenServiceImpl:148] [jf-access-task1     ] - Revoked 1 expired tokens.
+2021-06-12T19:23:12.507Z [jfac ] [INFO ] [66f696500f73fbbf] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-12T19:23:12.510Z [jfac ] [INFO ] [66f696500f73fbbf] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-05T19:23:12 
+2021-06-12T20:07:54.008Z [jfac ] [WARN ] [                ] [c.z.h.p.HikariPool:787        ] [P Unique housekeeper] - HikariCP Unique - Thread starvation or clock leap detected (housekeeper delta=2m4s265ms978µs687ns).
+2021-06-12T20:07:54.018Z [jfac ] [WARN ] [                ] [c.z.h.p.HikariPool:787        ] [iCP Main housekeeper] - HikariCP Main - Thread starvation or clock leap detected (housekeeper delta=2m4s562ms688µs513ns).
+2021-06-12T20:07:54.640Z [jfac ] [INFO ] [7b5877c0ac3ba620] [o.j.a.s.s.c.s.HeartbeatJob:81 ] [jf-access-task1     ] - Refreshing server state after it was considered as stale by peers [last previous successful update 1623528361512]
+2021-06-12T20:07:54.665Z [jfac ] [INFO ] [7b5877c0ac3ba620] [CertificateFileHandlerBase:181] [jf-access-task1     ] - Loading root certificate from database.
+2021-06-12T20:07:54.901Z [jfac ] [INFO ] [                ] [.s.b.AccessProjectBootstrap:89] [pool-26-thread-12   ] - Finished initializing Projects permissions in 237.7 millis
+2021-06-12T20:07:54.902Z [jfac ] [INFO ] [7b5877c0ac3ba620] [CertificateFileHandlerBase:328] [jf-access-task1     ] - [ACCESS BOOTSTRAP] Saved new root certificate at: /opt/jfrog/artifactory/var/etc/access/keys/root.crt
+2021-06-12T20:07:54.903Z [jfac ] [INFO ] [7b5877c0ac3ba620] [CertificateFileHandlerBase:190] [jf-access-task1     ] - Finished loading root certificate from database.
+2021-06-12T20:07:54.906Z [jfac ] [INFO ] [7b5877c0ac3ba620] [CertificateFileHandlerBase:181] [jf-access-task1     ] - Loading ca certificate from database.
+2021-06-12T20:07:54.982Z [jfac ] [INFO ] [7b5877c0ac3ba620] [CertificateFileHandlerBase:328] [jf-access-task1     ] - [ACCESS BOOTSTRAP] Saved new ca certificate at: /opt/jfrog/artifactory/var/etc/access/keys/ca.crt
+2021-06-12T20:07:54.983Z [jfac ] [INFO ] [7b5877c0ac3ba620] [CertificateFileHandlerBase:190] [jf-access-task1     ] - Finished loading ca certificate from database.
+2021-06-12T20:07:54.987Z [jfac ] [INFO ] [7b5877c0ac3ba620] [alConfigurationServiceBase:182] [jf-access-task1     ] - Loading configuration from db finished successfully
+2021-06-12T20:23:12.514Z [jfac ] [INFO ] [5cd5ea21543d01a ] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-12T20:23:12.517Z [jfac ] [INFO ] [5cd5ea21543d01a ] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-05T20:23:12 
+2021-06-12T21:23:12.520Z [jfac ] [INFO ] [c03beceb2bb633ba] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-12T21:23:12.528Z [jfac ] [INFO ] [c03beceb2bb633ba] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-05T21:23:12 
+2021-06-12T22:23:12.530Z [jfac ] [INFO ] [e7335da32cd9fe0f] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-12T22:23:12.534Z [jfac ] [INFO ] [e7335da32cd9fe0f] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-05T22:23:12 
+2021-06-12T23:23:12.546Z [jfac ] [INFO ] [79e4005a7e924d9e] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-12T23:23:12.547Z [jfac ] [INFO ] [79e4005a7e924d9e] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-05T23:23:12 
+2021-06-13T00:23:12.548Z [jfac ] [INFO ] [2fc67c99fb84b5ff] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-13T00:23:12.550Z [jfac ] [INFO ] [2fc67c99fb84b5ff] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-06T00:23:12 
+2021-06-13T01:23:12.553Z [jfac ] [INFO ] [cb78c61a4c3d168d] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-13T01:23:12.557Z [jfac ] [INFO ] [cb78c61a4c3d168d] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-06T01:23:12 
+2021-06-13T02:23:12.559Z [jfac ] [INFO ] [cdf55239c9102f84] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-13T02:23:12.562Z [jfac ] [INFO ] [cdf55239c9102f84] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-06T02:23:12 
+2021-06-14T06:47:18.736Z [jfac ] [INFO ] [7f5b3c59a56e2860] [o.j.a.s.s.c.s.HeartbeatJob:81 ] [jf-access-task1     ] - Refreshing server state after it was considered as stale by peers [last previous successful update 1623553079591]
+2021-06-14T06:47:18.886Z [jfac ] [INFO ] [7f5b3c59a56e2860] [CertificateFileHandlerBase:181] [jf-access-task1     ] - Loading root certificate from database.
+2021-06-14T06:47:19.354Z [jfac ] [INFO ] [                ] [.s.b.AccessProjectBootstrap:89] [pool-26-thread-15   ] - Finished initializing Projects permissions in 438.48 millis
+2021-06-14T06:47:19.456Z [jfac ] [INFO ] [7f5b3c59a56e2860] [CertificateFileHandlerBase:328] [jf-access-task1     ] - [ACCESS BOOTSTRAP] Saved new root certificate at: /opt/jfrog/artifactory/var/etc/access/keys/root.crt
+2021-06-14T06:47:19.457Z [jfac ] [INFO ] [7f5b3c59a56e2860] [CertificateFileHandlerBase:190] [jf-access-task1     ] - Finished loading root certificate from database.
+2021-06-14T06:47:19.458Z [jfac ] [INFO ] [7f5b3c59a56e2860] [CertificateFileHandlerBase:181] [jf-access-task1     ] - Loading ca certificate from database.
+2021-06-14T06:47:19.630Z [jfac ] [INFO ] [7f5b3c59a56e2860] [CertificateFileHandlerBase:328] [jf-access-task1     ] - [ACCESS BOOTSTRAP] Saved new ca certificate at: /opt/jfrog/artifactory/var/etc/access/keys/ca.crt
+2021-06-14T06:47:19.636Z [jfac ] [INFO ] [7f5b3c59a56e2860] [CertificateFileHandlerBase:190] [jf-access-task1     ] - Finished loading ca certificate from database.
+2021-06-14T06:47:19.641Z [jfac ] [INFO ] [7f5b3c59a56e2860] [alConfigurationServiceBase:182] [jf-access-task1     ] - Loading configuration from db finished successfully
+2021-06-14T06:47:22.120Z [jfac ] [INFO ] [6c7d439f7f899f3d] [j.a.s.s.t.TokenServiceImpl:148] [7.0.0.1-8040-exec-69] - Revoked 4 expired tokens.
+2021-06-14T06:47:22.409Z [jfac ] [INFO ] [6c7d439f7f899f3d] [.AccessImporterExporterImpl:71] [7.0.0.1-8040-exec-69] - Exporting encryption...
+2021-06-14T06:47:22.528Z [jfac ] [INFO ] [6c7d439f7f899f3d] [.AccessImporterExporterImpl:71] [7.0.0.1-8040-exec-69] - Exporting permissions...
+2021-06-14T06:47:22.745Z [jfac ] [INFO ] [6c7d439f7f899f3d] [.AccessImporterExporterImpl:71] [7.0.0.1-8040-exec-69] - Exporting users...
+2021-06-14T06:47:22.866Z [jfac ] [INFO ] [6c7d439f7f899f3d] [.AccessImporterExporterImpl:71] [7.0.0.1-8040-exec-69] - Exporting federation_events...
+2021-06-14T06:47:23.014Z [jfac ] [INFO ] [6c7d439f7f899f3d] [.AccessImporterExporterImpl:71] [7.0.0.1-8040-exec-69] - Exporting federation_servers...
+2021-06-14T06:47:23.050Z [jfac ] [INFO ] [6c7d439f7f899f3d] [.AccessImporterExporterImpl:71] [7.0.0.1-8040-exec-69] - Exporting tokens...
+2021-06-14T06:47:23.087Z [jfac ] [INFO ] [6c7d439f7f899f3d] [.d.TokenStorageServiceImpl:220] [7.0.0.1-8040-exec-69] - Filtered out 17 system tokens from export
+2021-06-14T06:47:23.095Z [jfac ] [INFO ] [6c7d439f7f899f3d] [.AccessImporterExporterImpl:71] [7.0.0.1-8040-exec-69] - Exporting groups...
+2021-06-14T06:47:23.106Z [jfac ] [INFO ] [6c7d439f7f899f3d] [.AccessImporterExporterImpl:71] [7.0.0.1-8040-exec-69] - Exporting platform_configurations...
+2021-06-14T06:47:23.154Z [jfac ] [INFO ] [6c7d439f7f899f3d] [.AccessImporterExporterImpl:71] [7.0.0.1-8040-exec-69] - Exporting config...
+2021-06-14T06:47:23.324Z [jfac ] [INFO ] [6c7d439f7f899f3d] [.AccessImporterExporterImpl:71] [7.0.0.1-8040-exec-69] - Exporting NodeIdServiceId...
+2021-06-14T06:55:11.443Z [jfac ] [WARN ] [                ] [c.z.h.p.HikariPool:787        ] [P Unique housekeeper] - HikariCP Unique - Thread starvation or clock leap detected (housekeeper delta=6m49s364ms689µs992ns).
+2021-06-14T06:55:11.443Z [jfac ] [WARN ] [                ] [c.z.h.p.HikariPool:787        ] [iCP Main housekeeper] - HikariCP Main - Thread starvation or clock leap detected (housekeeper delta=6m49s322ms379µs453ns).
+2021-06-14T06:55:12.216Z [jfac ] [INFO ] [1ae44e8190a8c09f] [o.j.a.s.s.c.s.HeartbeatJob:81 ] [jf-access-task1     ] - Refreshing server state after it was considered as stale by peers [last previous successful update 1623653309970]
+2021-06-14T06:55:12.303Z [jfac ] [INFO ] [1ae44e8190a8c09f] [CertificateFileHandlerBase:181] [jf-access-task1     ] - Loading root certificate from database.
+2021-06-14T06:55:12.577Z [jfac ] [INFO ] [                ] [.s.b.AccessProjectBootstrap:89] [pool-26-thread-17   ] - Finished initializing Projects permissions in 246.56 millis
+2021-06-14T06:55:12.817Z [jfac ] [INFO ] [1ae44e8190a8c09f] [CertificateFileHandlerBase:328] [jf-access-task1     ] - [ACCESS BOOTSTRAP] Saved new root certificate at: /opt/jfrog/artifactory/var/etc/access/keys/root.crt
+2021-06-14T06:55:12.817Z [jfac ] [INFO ] [1ae44e8190a8c09f] [CertificateFileHandlerBase:190] [jf-access-task1     ] - Finished loading root certificate from database.
+2021-06-14T06:55:12.818Z [jfac ] [INFO ] [1ae44e8190a8c09f] [CertificateFileHandlerBase:181] [jf-access-task1     ] - Loading ca certificate from database.
+2021-06-14T06:55:12.928Z [jfac ] [INFO ] [1ae44e8190a8c09f] [CertificateFileHandlerBase:328] [jf-access-task1     ] - [ACCESS BOOTSTRAP] Saved new ca certificate at: /opt/jfrog/artifactory/var/etc/access/keys/ca.crt
+2021-06-14T06:55:12.929Z [jfac ] [INFO ] [1ae44e8190a8c09f] [CertificateFileHandlerBase:190] [jf-access-task1     ] - Finished loading ca certificate from database.
+2021-06-14T06:55:12.933Z [jfac ] [INFO ] [1ae44e8190a8c09f] [alConfigurationServiceBase:182] [jf-access-task1     ] - Loading configuration from db finished successfully
+2021-06-14T07:12:08.959Z [jfac ] [INFO ] [4f59056cdaa41a32] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-14T07:12:08.961Z [jfac ] [INFO ] [4f59056cdaa41a32] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-07T07:12:08 
+2021-06-14T08:12:08.963Z [jfac ] [INFO ] [a387e9f028d00c05] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-14T08:12:08.963Z [jfac ] [INFO ] [a387e9f028d00c05] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-07T08:12:08 
+2021-06-14T09:12:08.966Z [jfac ] [INFO ] [c9ed2b877dd5eac0] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-14T09:12:08.967Z [jfac ] [INFO ] [c9ed2b877dd5eac0] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-07T09:12:08 
+2021-06-14T10:12:08.968Z [jfac ] [INFO ] [5c0ee69bce035d70] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-14T10:12:08.969Z [jfac ] [INFO ] [5c0ee69bce035d70] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-07T10:12:08 
+2021-06-14T11:12:08.981Z [jfac ] [INFO ] [29313614d14ce220] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-14T11:12:08.982Z [jfac ] [INFO ] [29313614d14ce220] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-07T11:12:08 
+2021-06-14T12:12:08.983Z [jfac ] [INFO ] [d43e170ac586695e] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-14T12:12:08.984Z [jfac ] [INFO ] [d43e170ac586695e] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-07T12:12:08 
+2021-06-14T13:12:08.998Z [jfac ] [INFO ] [3cae91c7db4ea689] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-14T13:12:08.998Z [jfac ] [INFO ] [3cae91c7db4ea689] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-07T13:12:08 
+2021-06-14T14:12:09.012Z [jfac ] [INFO ] [393a5d98069ce6a0] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-14T14:12:09.015Z [jfac ] [INFO ] [393a5d98069ce6a0] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-07T14:12:09 
+2021-06-14T15:00:00.003Z [jfac ] [INFO ] [f89d4e436e619073] [j.a.s.s.t.TokenServiceImpl:148] [jf-access-task1     ] - Revoked 4 expired tokens.
+2021-06-14T15:12:09.017Z [jfac ] [INFO ] [ed472a68a97ad92d] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-14T15:12:09.017Z [jfac ] [INFO ] [ed472a68a97ad92d] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-07T15:12:09 
+2021-06-14T16:12:09.018Z [jfac ] [INFO ] [73f778490ff7ae89] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-14T16:12:09.019Z [jfac ] [INFO ] [73f778490ff7ae89] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-07T16:12:09 
+2021-06-14T17:12:09.020Z [jfac ] [INFO ] [54509d0cdedd3237] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-14T17:12:09.021Z [jfac ] [INFO ] [54509d0cdedd3237] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-07T17:12:09 
+2021-06-14T18:12:09.023Z [jfac ] [INFO ] [c316493ef9c1253 ] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-14T18:12:09.024Z [jfac ] [INFO ] [c316493ef9c1253 ] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-07T18:12:09 
+2021-06-15T05:59:18.097Z [jfac ] [INFO ] [31d953f12efdb245] [o.j.a.s.s.c.s.HeartbeatJob:81 ] [jf-access-task1     ] - Refreshing server state after it was considered as stale by peers [last previous successful update 1623695918813]
+2021-06-15T05:59:18.143Z [jfac ] [INFO ] [31d953f12efdb245] [CertificateFileHandlerBase:181] [jf-access-task1     ] - Loading root certificate from database.
+2021-06-15T05:59:18.203Z [jfac ] [INFO ] [                ] [.s.b.AccessProjectBootstrap:89] [pool-26-thread-20   ] - Finished initializing Projects permissions in 51.4 millis
+2021-06-15T05:59:18.460Z [jfac ] [INFO ] [31d953f12efdb245] [CertificateFileHandlerBase:328] [jf-access-task1     ] - [ACCESS BOOTSTRAP] Saved new root certificate at: /opt/jfrog/artifactory/var/etc/access/keys/root.crt
+2021-06-15T05:59:18.461Z [jfac ] [INFO ] [31d953f12efdb245] [CertificateFileHandlerBase:190] [jf-access-task1     ] - Finished loading root certificate from database.
+2021-06-15T05:59:18.461Z [jfac ] [INFO ] [31d953f12efdb245] [CertificateFileHandlerBase:181] [jf-access-task1     ] - Loading ca certificate from database.
+2021-06-15T05:59:18.512Z [jfac ] [INFO ] [31d953f12efdb245] [CertificateFileHandlerBase:328] [jf-access-task1     ] - [ACCESS BOOTSTRAP] Saved new ca certificate at: /opt/jfrog/artifactory/var/etc/access/keys/ca.crt
+2021-06-15T05:59:18.513Z [jfac ] [INFO ] [31d953f12efdb245] [CertificateFileHandlerBase:190] [jf-access-task1     ] - Finished loading ca certificate from database.
+2021-06-15T05:59:18.517Z [jfac ] [INFO ] [31d953f12efdb245] [alConfigurationServiceBase:182] [jf-access-task1     ] - Loading configuration from db finished successfully
+2021-06-15T05:59:19.953Z [jfac ] [INFO ] [13104cbce51c2799] [.AccessImporterExporterImpl:71] [7.0.0.1-8040-exec-62] - Exporting encryption...
+2021-06-15T05:59:19.963Z [jfac ] [INFO ] [13104cbce51c2799] [.AccessImporterExporterImpl:71] [7.0.0.1-8040-exec-62] - Exporting permissions...
+2021-06-15T05:59:19.987Z [jfac ] [INFO ] [13104cbce51c2799] [.AccessImporterExporterImpl:71] [7.0.0.1-8040-exec-62] - Exporting users...
+2021-06-15T05:59:20.017Z [jfac ] [INFO ] [13104cbce51c2799] [.AccessImporterExporterImpl:71] [7.0.0.1-8040-exec-62] - Exporting federation_events...
+2021-06-15T05:59:20.037Z [jfac ] [INFO ] [13104cbce51c2799] [.AccessImporterExporterImpl:71] [7.0.0.1-8040-exec-62] - Exporting federation_servers...
+2021-06-15T05:59:20.053Z [jfac ] [INFO ] [13104cbce51c2799] [.AccessImporterExporterImpl:71] [7.0.0.1-8040-exec-62] - Exporting tokens...
+2021-06-15T05:59:20.055Z [jfac ] [INFO ] [13104cbce51c2799] [.d.TokenStorageServiceImpl:220] [7.0.0.1-8040-exec-62] - Filtered out 17 system tokens from export
+2021-06-15T05:59:20.061Z [jfac ] [INFO ] [13104cbce51c2799] [.AccessImporterExporterImpl:71] [7.0.0.1-8040-exec-62] - Exporting groups...
+2021-06-15T05:59:20.067Z [jfac ] [INFO ] [13104cbce51c2799] [.AccessImporterExporterImpl:71] [7.0.0.1-8040-exec-62] - Exporting platform_configurations...
+2021-06-15T05:59:20.070Z [jfac ] [INFO ] [13104cbce51c2799] [.AccessImporterExporterImpl:71] [7.0.0.1-8040-exec-62] - Exporting config...
+2021-06-15T05:59:20.110Z [jfac ] [INFO ] [13104cbce51c2799] [.AccessImporterExporterImpl:71] [7.0.0.1-8040-exec-62] - Exporting NodeIdServiceId...
+2021-06-15T06:32:30.210Z [jfac ] [INFO ] [e6abed37f7d943ec] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-15T06:32:30.214Z [jfac ] [INFO ] [e6abed37f7d943ec] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-08T06:32:30 
+2021-06-15T07:32:30.215Z [jfac ] [INFO ] [a108d626807be5b9] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-15T07:32:30.216Z [jfac ] [INFO ] [a108d626807be5b9] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-08T07:32:30 
+2021-06-15T08:32:30.218Z [jfac ] [INFO ] [91194a3680ae534c] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-15T08:32:30.219Z [jfac ] [INFO ] [91194a3680ae534c] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-08T08:32:30 
+2021-06-15T09:32:30.221Z [jfac ] [INFO ] [93bd2fbbd4d0a897] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-15T09:32:30.223Z [jfac ] [INFO ] [93bd2fbbd4d0a897] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-08T09:32:30 
+2021-06-15T10:33:57.143Z [jfac ] [WARN ] [                ] [c.z.h.p.HikariPool:787        ] [P Unique housekeeper] - HikariCP Unique - Thread starvation or clock leap detected (housekeeper delta=2m8s23ms42µs644ns).
+2021-06-15T10:33:57.143Z [jfac ] [WARN ] [                ] [c.z.h.p.HikariPool:787        ] [iCP Main housekeeper] - HikariCP Main - Thread starvation or clock leap detected (housekeeper delta=2m8s216ms831µs821ns).
+2021-06-15T10:33:58.031Z [jfac ] [INFO ] [66bec0bfaf729a14] [o.j.a.s.s.c.s.HeartbeatJob:81 ] [jf-access-task1     ] - Refreshing server state after it was considered as stale by peers [last previous successful update 1623753131343]
+2021-06-15T10:33:58.043Z [jfac ] [INFO ] [66bec0bfaf729a14] [CertificateFileHandlerBase:181] [jf-access-task1     ] - Loading root certificate from database.
+2021-06-15T10:33:58.076Z [jfac ] [INFO ] [                ] [.s.b.AccessProjectBootstrap:89] [pool-26-thread-21   ] - Finished initializing Projects permissions in 43.89 millis
+2021-06-15T10:33:58.151Z [jfac ] [INFO ] [66bec0bfaf729a14] [CertificateFileHandlerBase:328] [jf-access-task1     ] - [ACCESS BOOTSTRAP] Saved new root certificate at: /opt/jfrog/artifactory/var/etc/access/keys/root.crt
+2021-06-15T10:33:58.169Z [jfac ] [INFO ] [66bec0bfaf729a14] [CertificateFileHandlerBase:190] [jf-access-task1     ] - Finished loading root certificate from database.
+2021-06-15T10:33:58.170Z [jfac ] [INFO ] [66bec0bfaf729a14] [CertificateFileHandlerBase:181] [jf-access-task1     ] - Loading ca certificate from database.
+2021-06-15T10:33:58.255Z [jfac ] [INFO ] [66bec0bfaf729a14] [CertificateFileHandlerBase:328] [jf-access-task1     ] - [ACCESS BOOTSTRAP] Saved new ca certificate at: /opt/jfrog/artifactory/var/etc/access/keys/ca.crt
+2021-06-15T10:33:58.257Z [jfac ] [INFO ] [66bec0bfaf729a14] [CertificateFileHandlerBase:190] [jf-access-task1     ] - Finished loading ca certificate from database.
+2021-06-15T10:33:58.268Z [jfac ] [INFO ] [66bec0bfaf729a14] [alConfigurationServiceBase:182] [jf-access-task1     ] - Loading configuration from db finished successfully
+2021-06-15T10:33:58.301Z [jfac ] [INFO ] [f54da64923cbdfd5] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-15T10:33:58.303Z [jfac ] [INFO ] [f54da64923cbdfd5] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-08T10:33:58 
+2021-06-15T11:33:58.306Z [jfac ] [INFO ] [543625aa288304a8] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-15T11:33:58.306Z [jfac ] [INFO ] [543625aa288304a8] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-08T11:33:58 
+2021-06-15T12:33:58.307Z [jfac ] [INFO ] [1efc76ae452b3051] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-15T12:33:58.308Z [jfac ] [INFO ] [1efc76ae452b3051] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-08T12:33:58 
+2021-06-15T13:33:58.311Z [jfac ] [INFO ] [b9560f14a5576b9b] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-15T13:33:58.312Z [jfac ] [INFO ] [b9560f14a5576b9b] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-08T13:33:58 
+2021-06-15T14:33:58.313Z [jfac ] [INFO ] [ba580b10805d9742] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-15T14:33:58.314Z [jfac ] [INFO ] [ba580b10805d9742] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-08T14:33:58 
+2021-06-16T05:50:23.926Z [jfac ] [WARN ] [                ] [c.z.h.p.HikariPool:787        ] [P Unique housekeeper] - HikariCP Unique - Thread starvation or clock leap detected (housekeeper delta=48s680ms909µs170ns).
+2021-06-16T05:50:23.897Z [jfac ] [WARN ] [                ] [c.z.h.p.HikariPool:787        ] [iCP Main housekeeper] - HikariCP Main - Thread starvation or clock leap detected (housekeeper delta=48s639ms507µs355ns).
+2021-06-16T05:50:25.076Z [jfac ] [INFO ] [9720b6058b12da00] [o.j.a.s.s.c.s.HeartbeatJob:81 ] [jf-access-task1     ] - Refreshing server state after it was considered as stale by peers [last previous successful update 1623769156300]
+2021-06-16T05:50:25.081Z [jfac ] [INFO ] [9720b6058b12da00] [CertificateFileHandlerBase:181] [jf-access-task1     ] - Loading root certificate from database.
+2021-06-16T05:50:25.438Z [jfac ] [INFO ] [                ] [.s.b.AccessProjectBootstrap:89] [pool-26-thread-23   ] - Finished initializing Projects permissions in 187.78 millis
+2021-06-16T05:50:25.768Z [jfac ] [INFO ] [9720b6058b12da00] [CertificateFileHandlerBase:328] [jf-access-task1     ] - [ACCESS BOOTSTRAP] Saved new root certificate at: /opt/jfrog/artifactory/var/etc/access/keys/root.crt
+2021-06-16T05:50:25.769Z [jfac ] [INFO ] [9720b6058b12da00] [CertificateFileHandlerBase:190] [jf-access-task1     ] - Finished loading root certificate from database.
+2021-06-16T05:50:25.770Z [jfac ] [INFO ] [9720b6058b12da00] [CertificateFileHandlerBase:181] [jf-access-task1     ] - Loading ca certificate from database.
+2021-06-16T05:50:25.975Z [jfac ] [INFO ] [9720b6058b12da00] [CertificateFileHandlerBase:328] [jf-access-task1     ] - [ACCESS BOOTSTRAP] Saved new ca certificate at: /opt/jfrog/artifactory/var/etc/access/keys/ca.crt
+2021-06-16T05:50:25.976Z [jfac ] [INFO ] [9720b6058b12da00] [CertificateFileHandlerBase:190] [jf-access-task1     ] - Finished loading ca certificate from database.
+2021-06-16T05:50:25.988Z [jfac ] [INFO ] [9720b6058b12da00] [alConfigurationServiceBase:182] [jf-access-task1     ] - Loading configuration from db finished successfully
+2021-06-16T05:50:27.684Z [jfac ] [INFO ] [b6632fdda9f229cd] [.AccessImporterExporterImpl:71] [.0.0.1-8040-exec-115] - Exporting encryption...
+2021-06-16T05:50:27.692Z [jfac ] [INFO ] [b6632fdda9f229cd] [.AccessImporterExporterImpl:71] [.0.0.1-8040-exec-115] - Exporting permissions...
+2021-06-16T05:50:27.730Z [jfac ] [INFO ] [b6632fdda9f229cd] [.AccessImporterExporterImpl:71] [.0.0.1-8040-exec-115] - Exporting users...
+2021-06-16T05:50:27.776Z [jfac ] [INFO ] [b6632fdda9f229cd] [.AccessImporterExporterImpl:71] [.0.0.1-8040-exec-115] - Exporting federation_events...
+2021-06-16T05:50:27.778Z [jfac ] [INFO ] [b6632fdda9f229cd] [.AccessImporterExporterImpl:71] [.0.0.1-8040-exec-115] - Exporting federation_servers...
+2021-06-16T05:50:27.782Z [jfac ] [INFO ] [b6632fdda9f229cd] [.AccessImporterExporterImpl:71] [.0.0.1-8040-exec-115] - Exporting tokens...
+2021-06-16T05:50:27.787Z [jfac ] [INFO ] [b6632fdda9f229cd] [.d.TokenStorageServiceImpl:220] [.0.0.1-8040-exec-115] - Filtered out 18 system tokens from export
+2021-06-16T05:50:27.793Z [jfac ] [INFO ] [b6632fdda9f229cd] [.AccessImporterExporterImpl:71] [.0.0.1-8040-exec-115] - Exporting groups...
+2021-06-16T05:50:27.807Z [jfac ] [INFO ] [b6632fdda9f229cd] [.AccessImporterExporterImpl:71] [.0.0.1-8040-exec-115] - Exporting platform_configurations...
+2021-06-16T05:50:27.814Z [jfac ] [INFO ] [b6632fdda9f229cd] [.AccessImporterExporterImpl:71] [.0.0.1-8040-exec-115] - Exporting config...
+2021-06-16T05:50:27.902Z [jfac ] [INFO ] [b6632fdda9f229cd] [.AccessImporterExporterImpl:71] [.0.0.1-8040-exec-115] - Exporting NodeIdServiceId...
+2021-06-16T06:24:35.071Z [jfac ] [INFO ] [baf554b75e1b7b3b] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-16T06:24:35.073Z [jfac ] [INFO ] [baf554b75e1b7b3b] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-09T06:24:35 
+2021-06-16T07:00:00.003Z [jfac ] [INFO ] [2456338ff542d67 ] [j.a.s.s.t.TokenServiceImpl:148] [jf-access-task1     ] - Revoked 4 expired tokens.
+2021-06-16T07:24:35.074Z [jfac ] [INFO ] [bf82420128cfbd3a] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-16T07:24:35.075Z [jfac ] [INFO ] [bf82420128cfbd3a] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-09T07:24:35 
+2021-06-16T08:24:35.076Z [jfac ] [INFO ] [54db7e8f06b28665] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-16T08:24:35.077Z [jfac ] [INFO ] [54db7e8f06b28665] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-09T08:24:35 
+2021-06-16T09:24:35.078Z [jfac ] [INFO ] [6c5af6368d76714a] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-16T09:24:35.086Z [jfac ] [INFO ] [6c5af6368d76714a] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-09T09:24:35 
+2021-06-16T10:24:35.087Z [jfac ] [INFO ] [95a115ee5afd8daa] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-16T10:24:35.088Z [jfac ] [INFO ] [95a115ee5afd8daa] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-09T10:24:35 
+2021-06-16T11:24:35.090Z [jfac ] [INFO ] [5924748c213f6237] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-16T11:24:35.091Z [jfac ] [INFO ] [5924748c213f6237] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-09T11:24:35 
+2021-06-16T12:24:35.092Z [jfac ] [INFO ] [80aa58b9b36c9979] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-16T12:24:35.092Z [jfac ] [INFO ] [80aa58b9b36c9979] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-09T12:24:35 
+2021-06-16T13:24:35.094Z [jfac ] [INFO ] [225b1265c84f7544] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-16T13:24:35.095Z [jfac ] [INFO ] [225b1265c84f7544] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-09T13:24:35 
+2021-06-16T14:24:35.095Z [jfac ] [INFO ] [b75a41b0cc24ea84] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-16T14:24:35.096Z [jfac ] [INFO ] [b75a41b0cc24ea84] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-09T14:24:35 
+2021-06-16T15:24:35.097Z [jfac ] [INFO ] [6651e4c4db2d0d99] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-16T15:24:35.097Z [jfac ] [INFO ] [6651e4c4db2d0d99] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-09T15:24:35 
+2021-06-16T16:24:35.109Z [jfac ] [INFO ] [4ec1d98e5841041a] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-16T16:24:35.113Z [jfac ] [INFO ] [4ec1d98e5841041a] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-09T16:24:35 
+2021-06-16T17:24:35.127Z [jfac ] [INFO ] [5df916db5da9acfd] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-16T17:24:35.131Z [jfac ] [INFO ] [5df916db5da9acfd] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-09T17:24:35 
+2021-06-16T18:40:08.551Z [jfac ] [WARN ] [                ] [c.z.h.p.HikariPool:787        ] [iCP Main housekeeper] - HikariCP Main - Thread starvation or clock leap detected (housekeeper delta=14m56s351ms916µs188ns).
+2021-06-16T18:40:08.588Z [jfac ] [WARN ] [                ] [c.z.h.p.HikariPool:787        ] [P Unique housekeeper] - HikariCP Unique - Thread starvation or clock leap detected (housekeeper delta=15m618ms839µs988ns).
+2021-06-16T18:40:12.245Z [jfac ] [INFO ] [f11e405b0243a2a6] [o.j.a.s.s.c.s.HeartbeatJob:81 ] [jf-access-task1     ] - Refreshing server state after it was considered as stale by peers [last previous successful update 1623867735333]
+2021-06-16T18:40:12.272Z [jfac ] [INFO ] [f11e405b0243a2a6] [CertificateFileHandlerBase:181] [jf-access-task1     ] - Loading root certificate from database.
+2021-06-16T18:40:12.315Z [jfac ] [INFO ] [                ] [.s.b.AccessProjectBootstrap:89] [pool-26-thread-26   ] - Finished initializing Projects permissions in 47.93 millis
+2021-06-16T18:40:12.527Z [jfac ] [INFO ] [f11e405b0243a2a6] [CertificateFileHandlerBase:328] [jf-access-task1     ] - [ACCESS BOOTSTRAP] Saved new root certificate at: /opt/jfrog/artifactory/var/etc/access/keys/root.crt
+2021-06-16T18:40:12.528Z [jfac ] [INFO ] [f11e405b0243a2a6] [CertificateFileHandlerBase:190] [jf-access-task1     ] - Finished loading root certificate from database.
+2021-06-16T18:40:12.528Z [jfac ] [INFO ] [f11e405b0243a2a6] [CertificateFileHandlerBase:181] [jf-access-task1     ] - Loading ca certificate from database.
+2021-06-16T18:40:12.726Z [jfac ] [INFO ] [f11e405b0243a2a6] [CertificateFileHandlerBase:328] [jf-access-task1     ] - [ACCESS BOOTSTRAP] Saved new ca certificate at: /opt/jfrog/artifactory/var/etc/access/keys/ca.crt
+2021-06-16T18:40:12.727Z [jfac ] [INFO ] [f11e405b0243a2a6] [CertificateFileHandlerBase:190] [jf-access-task1     ] - Finished loading ca certificate from database.
+2021-06-16T18:40:12.748Z [jfac ] [INFO ] [f11e405b0243a2a6] [alConfigurationServiceBase:182] [jf-access-task1     ] - Loading configuration from db finished successfully
+2021-06-16T18:40:12.906Z [jfac ] [INFO ] [27967409af19789f] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-16T18:40:12.910Z [jfac ] [INFO ] [27967409af19789f] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-09T18:40:12 
+2021-06-16T19:40:12.939Z [jfac ] [INFO ] [acc99357b063204e] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-16T19:40:12.962Z [jfac ] [INFO ] [acc99357b063204e] [.r.NodeRegistryServiceImpl:128] [jf-access-task1     ] - Cluster join: Token null not found, ignoring revoke
+2021-06-16T19:40:12.965Z [jfac ] [INFO ] [acc99357b063204e] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 5 Stale Nodes and 5 Join-Admin-Tokens from before: 2021-06-09T19:40:12 
+2021-06-16T23:43:57.885Z [jfac ] [INFO ] [b69240e80dae2bcf] [o.j.a.s.s.c.s.HeartbeatJob:81 ] [jf-access-task1     ] - Refreshing server state after it was considered as stale by peers [last previous successful update 1623872656091]
+2021-06-16T23:43:57.936Z [jfac ] [INFO ] [b69240e80dae2bcf] [CertificateFileHandlerBase:181] [jf-access-task1     ] - Loading root certificate from database.
+2021-06-16T23:43:58.323Z [jfac ] [INFO ] [                ] [.s.b.AccessProjectBootstrap:89] [pool-26-thread-27   ] - Finished initializing Projects permissions in 374.61 millis
+2021-06-16T23:43:58.370Z [jfac ] [INFO ] [b69240e80dae2bcf] [CertificateFileHandlerBase:328] [jf-access-task1     ] - [ACCESS BOOTSTRAP] Saved new root certificate at: /opt/jfrog/artifactory/var/etc/access/keys/root.crt
+2021-06-16T23:43:58.372Z [jfac ] [INFO ] [b69240e80dae2bcf] [CertificateFileHandlerBase:190] [jf-access-task1     ] - Finished loading root certificate from database.
+2021-06-16T23:43:58.373Z [jfac ] [INFO ] [b69240e80dae2bcf] [CertificateFileHandlerBase:181] [jf-access-task1     ] - Loading ca certificate from database.
+2021-06-16T23:43:58.517Z [jfac ] [INFO ] [b69240e80dae2bcf] [CertificateFileHandlerBase:328] [jf-access-task1     ] - [ACCESS BOOTSTRAP] Saved new ca certificate at: /opt/jfrog/artifactory/var/etc/access/keys/ca.crt
+2021-06-16T23:43:58.517Z [jfac ] [INFO ] [b69240e80dae2bcf] [CertificateFileHandlerBase:190] [jf-access-task1     ] - Finished loading ca certificate from database.
+2021-06-16T23:43:58.521Z [jfac ] [INFO ] [b69240e80dae2bcf] [alConfigurationServiceBase:182] [jf-access-task1     ] - Loading configuration from db finished successfully
+2021-06-17T00:39:31.552Z [jfac ] [INFO ] [d59d3ffc4bf61b44] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-17T00:39:31.553Z [jfac ] [INFO ] [d59d3ffc4bf61b44] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-10T00:39:31 
+2021-06-17T01:39:31.554Z [jfac ] [INFO ] [ca801bb4e45eb903] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-17T01:39:31.554Z [jfac ] [INFO ] [ca801bb4e45eb903] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-10T01:39:31 
+2021-06-17T02:00:00.284Z [jfac ] [INFO ] [b1755ac2baf5e398] [.AccessImporterExporterImpl:71] [.0.0.1-8040-exec-119] - Exporting encryption...
+2021-06-17T02:00:00.287Z [jfac ] [INFO ] [b1755ac2baf5e398] [.AccessImporterExporterImpl:71] [.0.0.1-8040-exec-119] - Exporting permissions...
+2021-06-17T02:00:00.296Z [jfac ] [INFO ] [b1755ac2baf5e398] [.AccessImporterExporterImpl:71] [.0.0.1-8040-exec-119] - Exporting users...
+2021-06-17T02:00:00.299Z [jfac ] [INFO ] [b1755ac2baf5e398] [.AccessImporterExporterImpl:71] [.0.0.1-8040-exec-119] - Exporting federation_events...
+2021-06-17T02:00:00.303Z [jfac ] [INFO ] [b1755ac2baf5e398] [.AccessImporterExporterImpl:71] [.0.0.1-8040-exec-119] - Exporting federation_servers...
+2021-06-17T02:00:00.307Z [jfac ] [INFO ] [b1755ac2baf5e398] [.AccessImporterExporterImpl:71] [.0.0.1-8040-exec-119] - Exporting tokens...
+2021-06-17T02:00:00.310Z [jfac ] [INFO ] [b1755ac2baf5e398] [.d.TokenStorageServiceImpl:220] [.0.0.1-8040-exec-119] - Filtered out 11 system tokens from export
+2021-06-17T02:00:00.311Z [jfac ] [INFO ] [b1755ac2baf5e398] [.AccessImporterExporterImpl:71] [.0.0.1-8040-exec-119] - Exporting groups...
+2021-06-17T02:00:00.312Z [jfac ] [INFO ] [b1755ac2baf5e398] [.AccessImporterExporterImpl:71] [.0.0.1-8040-exec-119] - Exporting platform_configurations...
+2021-06-17T02:00:00.316Z [jfac ] [INFO ] [b1755ac2baf5e398] [.AccessImporterExporterImpl:71] [.0.0.1-8040-exec-119] - Exporting config...
+2021-06-17T02:00:00.324Z [jfac ] [INFO ] [b1755ac2baf5e398] [.AccessImporterExporterImpl:71] [.0.0.1-8040-exec-119] - Exporting NodeIdServiceId...
+2021-06-17T02:39:31.566Z [jfac ] [INFO ] [6320e5e5c24cf304] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-17T02:39:31.567Z [jfac ] [INFO ] [6320e5e5c24cf304] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-10T02:39:31 
+2021-06-17T03:39:31.579Z [jfac ] [INFO ] [f82c2770e84b23d2] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-17T03:39:31.579Z [jfac ] [INFO ] [f82c2770e84b23d2] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-10T03:39:31 
+2021-06-17T04:39:31.582Z [jfac ] [INFO ] [336ae94ded29b1e6] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-17T04:39:31.583Z [jfac ] [INFO ] [336ae94ded29b1e6] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-10T04:39:31 
+2021-06-17T05:39:31.584Z [jfac ] [INFO ] [d3339858c980cf2e] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-17T05:39:31.585Z [jfac ] [INFO ] [d3339858c980cf2e] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-10T05:39:31 
+2021-06-17T06:39:31.587Z [jfac ] [INFO ] [bdbaaad1b002763b] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-17T06:39:31.588Z [jfac ] [INFO ] [bdbaaad1b002763b] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-10T06:39:31 
+2021-06-17T07:00:00.002Z [jfac ] [INFO ] [bb28af9029207a4b] [j.a.s.s.t.TokenServiceImpl:148] [jf-access-task1     ] - Revoked 1 expired tokens.
+2021-06-17T07:39:31.592Z [jfac ] [INFO ] [f72bb7242b21d77b] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-17T07:39:31.592Z [jfac ] [INFO ] [f72bb7242b21d77b] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-10T07:39:31 
+2021-06-17T08:39:31.594Z [jfac ] [INFO ] [3736484945bceb6 ] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-17T08:39:31.594Z [jfac ] [INFO ] [3736484945bceb6 ] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-10T08:39:31 
+2021-06-17T09:39:31.596Z [jfac ] [INFO ] [9a26d8495b69b6ad] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-17T09:39:31.597Z [jfac ] [INFO ] [9a26d8495b69b6ad] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-10T09:39:31 
+2021-06-17T10:00:00.005Z [jfac ] [INFO ] [353df3f1dbfec0bd] [j.a.s.s.t.TokenServiceImpl:148] [jf-access-task1     ] - Revoked 1 expired tokens.
+2021-06-17T10:39:31.598Z [jfac ] [INFO ] [d518c370636943ed] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-17T10:39:31.599Z [jfac ] [INFO ] [d518c370636943ed] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-10T10:39:31 
+2021-06-17T11:39:31.610Z [jfac ] [INFO ] [89199f5cbf6053f2] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-17T11:39:31.611Z [jfac ] [INFO ] [89199f5cbf6053f2] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-10T11:39:31 
+2021-06-17T12:39:31.623Z [jfac ] [INFO ] [28bcf2ce6e29157d] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-17T12:39:31.623Z [jfac ] [INFO ] [28bcf2ce6e29157d] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-10T12:39:31 
+2021-06-17T13:39:31.624Z [jfac ] [INFO ] [57e9e770654f4613] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-17T13:39:31.624Z [jfac ] [INFO ] [57e9e770654f4613] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-10T13:39:31 
+2021-06-17T14:39:31.626Z [jfac ] [INFO ] [882423d47b74a72d] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-17T14:39:31.627Z [jfac ] [INFO ] [882423d47b74a72d] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-10T14:39:31 
+2021-06-18T05:57:41.030Z [jfac ] [WARN ] [                ] [c.z.h.p.HikariPool:787        ] [P Unique housekeeper] - HikariCP Unique - Thread starvation or clock leap detected (housekeeper delta=52s541ms966µs652ns).
+2021-06-18T05:57:41.027Z [jfac ] [WARN ] [                ] [c.z.h.p.HikariPool:787        ] [iCP Main housekeeper] - HikariCP Main - Thread starvation or clock leap detected (housekeeper delta=52s745ms352µs31ns).
+2021-06-18T05:57:41.228Z [jfac ] [INFO ] [a76d1f97576081a6] [o.j.a.s.s.c.s.HeartbeatJob:81 ] [jf-access-task1     ] - Refreshing server state after it was considered as stale by peers [last previous successful update 1623941269405]
+2021-06-18T05:57:41.234Z [jfac ] [INFO ] [a76d1f97576081a6] [CertificateFileHandlerBase:181] [jf-access-task1     ] - Loading root certificate from database.
+2021-06-18T05:57:41.721Z [jfac ] [INFO ] [                ] [.s.b.AccessProjectBootstrap:89] [pool-26-thread-33   ] - Finished initializing Projects permissions in 470.03 millis
+2021-06-18T05:57:41.796Z [jfac ] [INFO ] [a76d1f97576081a6] [CertificateFileHandlerBase:328] [jf-access-task1     ] - [ACCESS BOOTSTRAP] Saved new root certificate at: /opt/jfrog/artifactory/var/etc/access/keys/root.crt
+2021-06-18T05:57:41.796Z [jfac ] [INFO ] [a76d1f97576081a6] [CertificateFileHandlerBase:190] [jf-access-task1     ] - Finished loading root certificate from database.
+2021-06-18T05:57:41.797Z [jfac ] [INFO ] [a76d1f97576081a6] [CertificateFileHandlerBase:181] [jf-access-task1     ] - Loading ca certificate from database.
+2021-06-18T05:57:43.081Z [jfac ] [INFO ] [a76d1f97576081a6] [CertificateFileHandlerBase:328] [jf-access-task1     ] - [ACCESS BOOTSTRAP] Saved new ca certificate at: /opt/jfrog/artifactory/var/etc/access/keys/ca.crt
+2021-06-18T05:57:43.082Z [jfac ] [INFO ] [a76d1f97576081a6] [CertificateFileHandlerBase:190] [jf-access-task1     ] - Finished loading ca certificate from database.
+2021-06-18T05:57:43.148Z [jfac ] [INFO ] [a76d1f97576081a6] [alConfigurationServiceBase:182] [jf-access-task1     ] - Loading configuration from db finished successfully
+2021-06-18T05:57:45.148Z [jfac ] [INFO ] [459447d633f83e73] [.AccessImporterExporterImpl:71] [.0.0.1-8040-exec-150] - Exporting encryption...
+2021-06-18T05:57:45.186Z [jfac ] [INFO ] [459447d633f83e73] [.AccessImporterExporterImpl:71] [.0.0.1-8040-exec-150] - Exporting permissions...
+2021-06-18T05:57:45.228Z [jfac ] [INFO ] [459447d633f83e73] [.AccessImporterExporterImpl:71] [.0.0.1-8040-exec-150] - Exporting users...
+2021-06-18T05:57:45.248Z [jfac ] [INFO ] [459447d633f83e73] [.AccessImporterExporterImpl:71] [.0.0.1-8040-exec-150] - Exporting federation_events...
+2021-06-18T05:57:45.251Z [jfac ] [INFO ] [459447d633f83e73] [.AccessImporterExporterImpl:71] [.0.0.1-8040-exec-150] - Exporting federation_servers...
+2021-06-18T05:57:45.255Z [jfac ] [INFO ] [459447d633f83e73] [.AccessImporterExporterImpl:71] [.0.0.1-8040-exec-150] - Exporting tokens...
+2021-06-18T05:57:45.277Z [jfac ] [INFO ] [459447d633f83e73] [.d.TokenStorageServiceImpl:220] [.0.0.1-8040-exec-150] - Filtered out 11 system tokens from export
+2021-06-18T05:57:45.280Z [jfac ] [INFO ] [459447d633f83e73] [.AccessImporterExporterImpl:71] [.0.0.1-8040-exec-150] - Exporting groups...
+2021-06-18T05:57:45.285Z [jfac ] [INFO ] [459447d633f83e73] [.AccessImporterExporterImpl:71] [.0.0.1-8040-exec-150] - Exporting platform_configurations...
+2021-06-18T05:57:45.337Z [jfac ] [INFO ] [459447d633f83e73] [.AccessImporterExporterImpl:71] [.0.0.1-8040-exec-150] - Exporting config...
+2021-06-18T05:57:45.605Z [jfac ] [INFO ] [459447d633f83e73] [.AccessImporterExporterImpl:71] [.0.0.1-8040-exec-150] - Exporting NodeIdServiceId...
+2021-06-18T06:48:49.240Z [jfac ] [INFO ] [48dbffb00f018890] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-18T06:48:49.241Z [jfac ] [INFO ] [48dbffb00f018890] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-11T06:48:49 
+2021-06-18T07:00:00.005Z [jfac ] [INFO ] [391f670eacfd487f] [j.a.s.s.t.TokenServiceImpl:148] [jf-access-task1     ] - Revoked 1 expired tokens.
+2021-06-18T07:48:49.242Z [jfac ] [INFO ] [c3a64b26dd15a764] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-18T07:48:49.243Z [jfac ] [INFO ] [c3a64b26dd15a764] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-11T07:48:49 
+2021-06-18T08:48:49.245Z [jfac ] [INFO ] [a898fc4e65ab0248] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-18T08:48:49.247Z [jfac ] [INFO ] [a898fc4e65ab0248] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-11T08:48:49 
+2021-06-18T09:48:49.249Z [jfac ] [INFO ] [2369589c5ab3c8fa] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-18T09:48:49.249Z [jfac ] [INFO ] [2369589c5ab3c8fa] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-11T09:48:49 
+2021-06-18T10:48:49.251Z [jfac ] [INFO ] [9c61b0787914e3c2] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-18T10:48:49.260Z [jfac ] [INFO ] [9c61b0787914e3c2] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-11T10:48:49 
+2021-06-18T11:48:49.272Z [jfac ] [INFO ] [c6ae54ef23dfa462] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-18T11:48:49.273Z [jfac ] [INFO ] [c6ae54ef23dfa462] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-11T11:48:49 
+2021-06-18T12:48:49.283Z [jfac ] [INFO ] [973ba5af17a98812] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-18T12:48:49.284Z [jfac ] [INFO ] [973ba5af17a98812] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-11T12:48:49 
+2021-06-18T13:48:49.285Z [jfac ] [INFO ] [3206b9f86e28d146] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-18T13:48:49.285Z [jfac ] [INFO ] [3206b9f86e28d146] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-11T13:48:49 
+2021-06-18T14:48:49.290Z [jfac ] [INFO ] [d011f1b284864d00] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 4dc91af1c536
+2021-06-18T14:48:49.292Z [jfac ] [INFO ] [d011f1b284864d00] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-06-11T14:48:49 

@@ -1,0 +1,70 @@
+2021-06-18T05:57:41.034Z [jfrt ] [INFO ] [                ] [ectedEntitiesStreamObserver:35] [Stream_1623401176577] - publishing full invalidation and attempting to resubscribe to affected permissions changes
+2021-06-18T05:57:41.020Z [jfrt ] [INFO ] [                ] [ffectedConfigStreamObserver:32] [Stream_1623401174212] - publishing full invalidation and attempting to resubscribe to affected configuration changes
+2021-06-18T05:57:41.024Z [jfrt ] [INFO ] [                ] [ffectedConfigStreamObserver:32] [Stream_1623401176224] - publishing full invalidation and attempting to resubscribe to affected configuration changes
+2021-06-18T05:57:41.082Z [jfrt ] [WARN ] [                ] [c.z.h.p.HikariPool:787        ] [iCP Main housekeeper] - HikariCP Main - Thread starvation or clock leap detected (housekeeper delta=52s613ms507µs356ns).
+2021-06-18T05:57:41.083Z [jfrt ] [WARN ] [                ] [c.z.h.p.HikariPool:787        ] [P Unique housekeeper] - HikariCP Unique - Thread starvation or clock leap detected (housekeeper delta=52s727ms234µs614ns).
+2021-06-18T05:57:41.276Z [jfrt ] [INFO ] [459447d633f83e73] [ifactoryApplicationContext:709] [art-exec-63         ] - Beginning full system export...
+2021-06-18T05:57:41.276Z [jfrt ] [INFO ] [459447d633f83e73] [ifactoryApplicationContext:736] [art-exec-63         ] - Creating temp export directory: /opt/jfrog/artifactory/var/backup/artifactory/backup-daily/current
+2021-06-18T05:57:41.277Z [jfrt ] [INFO ] [459447d633f83e73] [ifactoryApplicationContext:743] [art-exec-63         ] - Using backup directory: '/opt/jfrog/artifactory/var/backup/artifactory/backup-daily/current'.
+2021-06-18T05:57:41.277Z [jfrt ] [INFO ] [459447d633f83e73] [c.CentralConfigServiceImpl:675] [art-exec-63         ] - Exporting config...
+2021-06-18T05:57:41.282Z [jfrt ] [INFO ] [3f6a71c46ed2d41 ] [.s.d.b.s.BinaryServiceImpl:670] [art-exec-56         ] - Triggering Garbage Collection
+2021-06-18T05:57:41.282Z [jfrt ] [INFO ] [3f6a71c46ed2d41 ] [.s.d.b.s.g.GarbageCollector:66] [art-exec-56         ] - Starting GC strategy 'TRASH_AND_BINARIES'
+2021-06-18T05:57:41.419Z [jfrt ] [INFO ] [743dfeac53504a0f] [ualCacheCleanupServiceImpl:119] [art-exec-66         ] - Starting cleanup of virtual repositories cache
+2021-06-18T05:57:41.484Z [jfrt ] [INFO ] [743dfeac53504a0f] [ualCacheCleanupServiceImpl:127] [art-exec-66         ] - Completed virtual repositories cleanup: removed 0 cached files.
+2021-06-18T05:57:41.503Z [jfrt ] [INFO ] [3f6a71c46ed2d41 ] [.s.d.b.s.g.GarbageCollector:68] [art-exec-56         ] - Finished GC Strategy 'TRASH_AND_BINARIES'
+2021-06-18T05:57:41.283Z [jfrt ] [INFO ] [a6ca5db4b043cd08] [tegrationCleanupServiceImpl:44] [art-exec-65         ] - cleaning jobs table
+2021-06-18T05:57:41.728Z [jfrt ] [INFO ] [a6ca5db4b043cd08] [tegrationCleanupServiceImpl:48] [art-exec-65         ] - cleaned up 0 old job records
+2021-06-18T05:57:44.883Z [jfrt ] [INFO ] [459447d633f83e73] [o.a.s.a.AccessServiceImpl:1432] [art-exec-63         ] - Exporting serviceId to file
+2021-06-18T05:57:44.888Z [jfrt ] [INFO ] [459447d633f83e73] [o.a.s.a.AccessServiceImpl:1414] [art-exec-63         ] - Triggering export in access server...
+2021-06-18T05:57:45.721Z [jfrt ] [INFO ] [459447d633f83e73] [ifactoryApplicationContext:937] [art-exec-63         ] - Note: the etc exported folder has excessive permissions. Be careful with the files.
+2021-06-18T05:57:45.723Z [jfrt ] [INFO ] [459447d633f83e73] [a.s.u.SignedUrlServiceImpl:295] [art-exec-63         ] - Exporting URL signing key...
+2021-06-18T05:57:45.730Z [jfrt ] [INFO ] [459447d633f83e73] [r.s.RepositoryServiceImpl:1084] [art-exec-63         ] - Exporting repositories...
+2021-06-18T05:57:45.733Z [jfrt ] [INFO ] [459447d633f83e73] [a.r.d.i.DbRepoExportHandler:80] [art-exec-63         ] - artifactory-build-info export started with 1 nodes to: '/opt/jfrog/artifactory/var/backup/artifactory/backup-daily/current/repositories/artifactory-build-info'
+2021-06-18T05:57:45.736Z [jfrt ] [INFO ] [459447d633f83e73] [a.r.d.i.DbRepoExportHandler:90] [art-exec-63         ] - artifactory-build-info export finished with: 1 Items exported (0 files and 1 folders), 0 Item skipped: (0 files and 0 folders).Duration: 3.89 millis IPS: 257.26 Target: '/opt/jfrog/artifactory/var/backup/artifactory/backup-daily/current/repositories/artifactory-build-info'
+2021-06-18T05:57:45.739Z [jfrt ] [INFO ] [459447d633f83e73] [a.r.d.i.DbRepoExportHandler:80] [art-exec-63         ] - docker export started with 1 nodes to: '/opt/jfrog/artifactory/var/backup/artifactory/backup-daily/current/repositories/docker'
+2021-06-18T05:57:45.747Z [jfrt ] [INFO ] [459447d633f83e73] [a.r.d.i.DbRepoExportHandler:90] [art-exec-63         ] - docker export finished with: 1 Items exported (0 files and 1 folders), 0 Item skipped: (0 files and 0 folders).Duration: 8.61 millis IPS: 116.13 Target: '/opt/jfrog/artifactory/var/backup/artifactory/backup-daily/current/repositories/docker'
+2021-06-18T05:57:45.748Z [jfrt ] [INFO ] [459447d633f83e73] [a.r.d.i.DbRepoExportHandler:80] [art-exec-63         ] - example-repo-local export started with 1 nodes to: '/opt/jfrog/artifactory/var/backup/artifactory/backup-daily/current/repositories/example-repo-local'
+2021-06-18T05:57:45.793Z [jfrt ] [INFO ] [459447d633f83e73] [a.r.d.i.DbRepoExportHandler:90] [art-exec-63         ] - example-repo-local export finished with: 1 Items exported (0 files and 1 folders), 0 Item skipped: (0 files and 0 folders).Duration: 45.52 millis IPS: 21.97 Target: '/opt/jfrog/artifactory/var/backup/artifactory/backup-daily/current/repositories/example-repo-local'
+2021-06-18T05:57:45.797Z [jfrt ] [INFO ] [459447d633f83e73] [a.r.d.i.DbRepoExportHandler:80] [art-exec-63         ] - libs-release-local export started with 8 nodes to: '/opt/jfrog/artifactory/var/backup/artifactory/backup-daily/current/repositories/libs-release-local'
+2021-06-18T05:57:45.865Z [jfrt ] [INFO ] [459447d633f83e73] [a.r.d.i.DbRepoExportHandler:90] [art-exec-63         ] - libs-release-local export finished with: 8 Items exported (3 files and 5 folders), 0 Item skipped: (0 files and 0 folders).Duration: 68.62 millis IPS: 116.58 Target: '/opt/jfrog/artifactory/var/backup/artifactory/backup-daily/current/repositories/libs-release-local'
+2021-06-18T05:57:45.866Z [jfrt ] [INFO ] [459447d633f83e73] [a.r.d.i.DbRepoExportHandler:80] [art-exec-63         ] - libs-snapshot-local export started with 1 nodes to: '/opt/jfrog/artifactory/var/backup/artifactory/backup-daily/current/repositories/libs-snapshot-local'
+2021-06-18T05:57:45.871Z [jfrt ] [INFO ] [459447d633f83e73] [a.r.d.i.DbRepoExportHandler:90] [art-exec-63         ] - libs-snapshot-local export finished with: 1 Items exported (0 files and 1 folders), 0 Item skipped: (0 files and 0 folders).Duration: 5.17 millis IPS: 193.36 Target: '/opt/jfrog/artifactory/var/backup/artifactory/backup-daily/current/repositories/libs-snapshot-local'
+2021-06-18T05:57:45.872Z [jfrt ] [INFO ] [459447d633f83e73] [a.r.d.i.DbRepoExportHandler:80] [art-exec-63         ] - maven export started with 1 nodes to: '/opt/jfrog/artifactory/var/backup/artifactory/backup-daily/current/repositories/maven'
+2021-06-18T05:57:45.879Z [jfrt ] [INFO ] [459447d633f83e73] [a.r.d.i.DbRepoExportHandler:90] [art-exec-63         ] - maven export finished with: 1 Items exported (0 files and 1 folders), 0 Item skipped: (0 files and 0 folders).Duration: 6.51 millis IPS: 153.71 Target: '/opt/jfrog/artifactory/var/backup/artifactory/backup-daily/current/repositories/maven'
+2021-06-18T05:57:45.887Z [jfrt ] [INFO ] [459447d633f83e73] [ifactoryApplicationContext:839] [art-exec-63         ] - Full system export completed successfully.
+2021-06-18T06:46:15.886Z [jfrt ] [INFO ] [2bcc42b49b5b1ada] [aseBundleCleanupServiceImpl:84] [art-exec-66         ] - Starting to cleanup incomplete Release Bundles
+2021-06-18T06:46:15.886Z [jfrt ] [INFO ] [2bcc42b49b5b1ada] [aseBundleCleanupServiceImpl:90] [art-exec-66         ] - Finished incomplete Release Bundles cleanup
+2021-06-18T07:46:15.886Z [jfrt ] [INFO ] [85547c5a223193f8] [aseBundleCleanupServiceImpl:84] [art-exec-64         ] - Starting to cleanup incomplete Release Bundles
+2021-06-18T07:46:15.886Z [jfrt ] [INFO ] [85547c5a223193f8] [aseBundleCleanupServiceImpl:90] [art-exec-64         ] - Finished incomplete Release Bundles cleanup
+2021-06-18T08:00:00.000Z [jfrt ] [INFO ] [8de8bdfb28226011] [.s.d.b.s.BinaryServiceImpl:670] [art-exec-67         ] - Triggering Garbage Collection
+2021-06-18T08:00:00.001Z [jfrt ] [INFO ] [8de8bdfb28226011] [.s.d.b.s.g.GarbageCollector:66] [art-exec-67         ] - Starting GC strategy 'TRASH_AND_BINARIES'
+2021-06-18T08:00:00.002Z [jfrt ] [INFO ] [8de8bdfb28226011] [.s.d.b.s.g.GarbageCollector:68] [art-exec-67         ] - Finished GC Strategy 'TRASH_AND_BINARIES'
+2021-06-18T08:46:15.887Z [jfrt ] [INFO ] [1a195033a39fea4a] [aseBundleCleanupServiceImpl:84] [art-exec-61         ] - Starting to cleanup incomplete Release Bundles
+2021-06-18T08:46:15.888Z [jfrt ] [INFO ] [1a195033a39fea4a] [aseBundleCleanupServiceImpl:90] [art-exec-61         ] - Finished incomplete Release Bundles cleanup
+2021-06-18T08:46:16.318Z [jfrt ] [INFO ] [e48e38f5bb9a26c9] [adsFolderCleanupServiceImpl:52] [art-exec-58         ] - Starting docker temp folder cleanup
+2021-06-18T08:46:16.320Z [jfrt ] [INFO ] [e48e38f5bb9a26c9] [adsFolderCleanupServiceImpl:54] [art-exec-58         ] - Docker temp folder cleanup finished, time took: 2 millis
+2021-06-18T09:46:15.887Z [jfrt ] [INFO ] [ca032a89574ce30e] [aseBundleCleanupServiceImpl:84] [art-exec-69         ] - Starting to cleanup incomplete Release Bundles
+2021-06-18T09:46:15.890Z [jfrt ] [INFO ] [ca032a89574ce30e] [aseBundleCleanupServiceImpl:90] [art-exec-69         ] - Finished incomplete Release Bundles cleanup
+2021-06-18T09:46:46.603Z [jfrt ] [INFO ] [984cf934baac2fa8] [a.e.EventsLogCleanUpService:69] [art-exec-63         ] - Starting cleanup of old events from event log
+2021-06-18T09:46:46.606Z [jfrt ] [INFO ] [984cf934baac2fa8] [.e.EventsLogCleanUpService:105] [art-exec-63         ] - Cleanup of old events from event log finished
+2021-06-18T10:46:15.886Z [jfrt ] [INFO ] [8943f07dce45571 ] [aseBundleCleanupServiceImpl:84] [art-exec-65         ] - Starting to cleanup incomplete Release Bundles
+2021-06-18T10:46:15.888Z [jfrt ] [INFO ] [8943f07dce45571 ] [aseBundleCleanupServiceImpl:90] [art-exec-65         ] - Finished incomplete Release Bundles cleanup
+2021-06-18T11:46:15.886Z [jfrt ] [INFO ] [2fc11881d553a1f1] [aseBundleCleanupServiceImpl:84] [art-exec-64         ] - Starting to cleanup incomplete Release Bundles
+2021-06-18T11:46:15.887Z [jfrt ] [INFO ] [2fc11881d553a1f1] [aseBundleCleanupServiceImpl:90] [art-exec-64         ] - Finished incomplete Release Bundles cleanup
+2021-06-18T12:00:00.002Z [jfrt ] [INFO ] [ceeab0d2b30254f ] [.s.d.b.s.BinaryServiceImpl:670] [art-exec-63         ] - Triggering Garbage Collection
+2021-06-18T12:00:00.002Z [jfrt ] [INFO ] [ceeab0d2b30254f ] [.s.d.b.s.g.GarbageCollector:66] [art-exec-63         ] - Starting GC strategy 'TRASH_AND_BINARIES'
+2021-06-18T12:00:00.003Z [jfrt ] [INFO ] [ceeab0d2b30254f ] [.s.d.b.s.g.GarbageCollector:68] [art-exec-63         ] - Finished GC Strategy 'TRASH_AND_BINARIES'
+2021-06-18T12:46:15.886Z [jfrt ] [INFO ] [1e22bc353bdd370d] [aseBundleCleanupServiceImpl:84] [art-exec-67         ] - Starting to cleanup incomplete Release Bundles
+2021-06-18T12:46:15.887Z [jfrt ] [INFO ] [1e22bc353bdd370d] [aseBundleCleanupServiceImpl:90] [art-exec-67         ] - Finished incomplete Release Bundles cleanup
+2021-06-18T13:46:15.886Z [jfrt ] [INFO ] [3efca09d5f2308  ] [aseBundleCleanupServiceImpl:84] [art-exec-61         ] - Starting to cleanup incomplete Release Bundles
+2021-06-18T13:46:15.887Z [jfrt ] [INFO ] [3efca09d5f2308  ] [aseBundleCleanupServiceImpl:90] [art-exec-61         ] - Finished incomplete Release Bundles cleanup
+2021-06-18T13:48:43.158Z [jfrt ] [INFO ] [                ] [.j.a.c.g.GrpcStreamObserver:76] [efault-executor-4675] - affected permissions stream stopped gracefully - immediate cache invalidation will not work without restart
+2021-06-18T13:48:44.742Z [jfrt ] [INFO ] [                ] [.j.a.c.g.GrpcStreamObserver:76] [efault-executor-4675] - affected platform config stream stopped gracefully - immediate cache invalidation will not work without restart
+2021-06-18T13:48:44.839Z [jfrt ] [INFO ] [                ] [.j.a.c.g.GrpcStreamObserver:76] [efault-executor-4675] - affected platform config stream stopped gracefully - immediate cache invalidation will not work without restart
+2021-06-18T13:48:46.225Z [jfrt ] [INFO ] [                ] [ffectedConfigStreamObserver:32] [Stream_1623401176224] - publishing full invalidation and attempting to resubscribe to affected configuration changes
+2021-06-18T13:48:46.578Z [jfrt ] [INFO ] [                ] [ectedEntitiesStreamObserver:35] [Stream_1623401176577] - publishing full invalidation and attempting to resubscribe to affected permissions changes
+2021-06-18T13:48:49.226Z [jfrt ] [INFO ] [                ] [ffectedConfigStreamObserver:32] [Stream_1623401174212] - publishing full invalidation and attempting to resubscribe to affected configuration changes
+2021-06-18T14:46:15.886Z [jfrt ] [INFO ] [980f94e5d8533f23] [aseBundleCleanupServiceImpl:84] [art-exec-64         ] - Starting to cleanup incomplete Release Bundles
+2021-06-18T14:46:15.887Z [jfrt ] [INFO ] [980f94e5d8533f23] [aseBundleCleanupServiceImpl:90] [art-exec-64         ] - Finished incomplete Release Bundles cleanup
+2021-06-18T15:46:15.887Z [jfrt ] [INFO ] [9c9174f6b7d21d2e] [aseBundleCleanupServiceImpl:84] [art-exec-60         ] - Starting to cleanup incomplete Release Bundles
+2021-06-18T15:46:15.892Z [jfrt ] [INFO ] [9c9174f6b7d21d2e] [aseBundleCleanupServiceImpl:90] [art-exec-60         ] - Finished incomplete Release Bundles cleanup

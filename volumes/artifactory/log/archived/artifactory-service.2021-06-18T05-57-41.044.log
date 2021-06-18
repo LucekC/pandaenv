@@ -1,0 +1,112 @@
+2021-06-17T05:46:15.887Z [jfrt ] [INFO ] [abd1e8d13b97f8b7] [aseBundleCleanupServiceImpl:84] [art-exec-68         ] - Starting to cleanup incomplete Release Bundles
+2021-06-17T05:46:15.895Z [jfrt ] [INFO ] [abd1e8d13b97f8b7] [aseBundleCleanupServiceImpl:90] [art-exec-68         ] - Finished incomplete Release Bundles cleanup
+2021-06-17T06:07:06.851Z [jfrt ] [INFO ] [                ] [.j.a.c.g.GrpcStreamObserver:76] [efault-executor-4007] - affected projects stream stopped gracefully - immediate cache invalidation will not work without restart
+2021-06-17T06:07:09.577Z [jfrt ] [INFO ] [                ] [.j.a.c.g.GrpcStreamObserver:76] [efault-executor-4007] - affected platform config stream stopped gracefully - immediate cache invalidation will not work without restart
+2021-06-17T06:07:11.558Z [jfrt ] [INFO ] [                ] [.j.a.c.g.GrpcStreamObserver:76] [efault-executor-3990] - affected platform config stream stopped gracefully - immediate cache invalidation will not work without restart
+2021-06-17T06:07:11.903Z [jfrt ] [ERROR] [                ] [.j.a.c.g.GrpcStreamObserver:97] [efault-executor-3990] - refreshing affected permissions stream - got an error (status: Status{code=INTERNAL, description=Received unexpected EOS on DATA frame from server., cause=null})
+io.grpc.StatusRuntimeException: INTERNAL: Received unexpected EOS on DATA frame from server.
+	at io.grpc.Status.asRuntimeException(Status.java:533)
+	at io.grpc.stub.ClientCalls$StreamObserverToCallListenerAdapter.onClose(ClientCalls.java:478)
+	at io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39)
+	at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23)
+	at io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40)
+	at org.jfrog.access.client.grpc.AuthorizationInterceptor$AuthenticatedClientCall$RejoiningClientCallListener.onClose(AuthorizationInterceptor.java:73)
+	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:413)
+	at io.grpc.internal.ClientCallImpl.access$500(ClientCallImpl.java:66)
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:742)
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:721)
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:123)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-06-17T06:07:11.904Z [jfrt ] [INFO ] [                ] [.j.a.c.g.GrpcStreamObserver:76] [efault-executor-3990] - affected permissions stream stopped gracefully - immediate cache invalidation will not work without restart
+2021-06-17T06:07:14.214Z [jfrt ] [INFO ] [                ] [ffectedConfigStreamObserver:32] [Stream_1623401174212] - publishing full invalidation and attempting to resubscribe to affected configuration changes
+2021-06-17T06:07:16.229Z [jfrt ] [INFO ] [                ] [ffectedConfigStreamObserver:32] [Stream_1623401176224] - publishing full invalidation and attempting to resubscribe to affected configuration changes
+2021-06-17T06:07:16.582Z [jfrt ] [INFO ] [                ] [ectedEntitiesStreamObserver:35] [Stream_1623401176577] - publishing full invalidation and attempting to resubscribe to affected permissions changes
+2021-06-17T06:46:15.886Z [jfrt ] [INFO ] [59179a6b2febd721] [aseBundleCleanupServiceImpl:84] [art-exec-61         ] - Starting to cleanup incomplete Release Bundles
+2021-06-17T06:46:15.887Z [jfrt ] [INFO ] [59179a6b2febd721] [aseBundleCleanupServiceImpl:90] [art-exec-61         ] - Finished incomplete Release Bundles cleanup
+2021-06-17T07:46:15.888Z [jfrt ] [INFO ] [f7b470f2dbcf2079] [aseBundleCleanupServiceImpl:84] [art-exec-67         ] - Starting to cleanup incomplete Release Bundles
+2021-06-17T07:46:15.889Z [jfrt ] [INFO ] [f7b470f2dbcf2079] [aseBundleCleanupServiceImpl:90] [art-exec-67         ] - Finished incomplete Release Bundles cleanup
+2021-06-17T07:46:46.604Z [jfrt ] [INFO ] [f28bcefee251c39c] [a.e.EventsLogCleanUpService:69] [art-exec-65         ] - Starting cleanup of old events from event log
+2021-06-17T07:46:46.612Z [jfrt ] [INFO ] [f28bcefee251c39c] [.e.EventsLogCleanUpService:105] [art-exec-65         ] - Cleanup of old events from event log finished
+2021-06-17T08:00:00.004Z [jfrt ] [INFO ] [a8bb02a486bce038] [.s.d.b.s.BinaryServiceImpl:670] [art-exec-66         ] - Triggering Garbage Collection
+2021-06-17T08:00:00.005Z [jfrt ] [INFO ] [a8bb02a486bce038] [.s.d.b.s.g.GarbageCollector:66] [art-exec-66         ] - Starting GC strategy 'TRASH_AND_BINARIES'
+2021-06-17T08:00:00.005Z [jfrt ] [INFO ] [a8bb02a486bce038] [.s.d.b.s.g.GarbageCollector:68] [art-exec-66         ] - Finished GC Strategy 'TRASH_AND_BINARIES'
+2021-06-17T08:46:15.886Z [jfrt ] [INFO ] [76571b5f170ec69e] [aseBundleCleanupServiceImpl:84] [art-exec-56         ] - Starting to cleanup incomplete Release Bundles
+2021-06-17T08:46:15.887Z [jfrt ] [INFO ] [76571b5f170ec69e] [aseBundleCleanupServiceImpl:90] [art-exec-56         ] - Finished incomplete Release Bundles cleanup
+2021-06-17T08:46:16.317Z [jfrt ] [INFO ] [8c6496cd98521cb2] [adsFolderCleanupServiceImpl:52] [art-exec-66         ] - Starting docker temp folder cleanup
+2021-06-17T08:46:16.319Z [jfrt ] [INFO ] [8c6496cd98521cb2] [adsFolderCleanupServiceImpl:54] [art-exec-66         ] - Docker temp folder cleanup finished, time took: 2 millis
+2021-06-17T09:46:15.886Z [jfrt ] [INFO ] [d8fd28fc23181ce6] [aseBundleCleanupServiceImpl:84] [art-exec-61         ] - Starting to cleanup incomplete Release Bundles
+2021-06-17T09:46:15.889Z [jfrt ] [INFO ] [d8fd28fc23181ce6] [aseBundleCleanupServiceImpl:90] [art-exec-61         ] - Finished incomplete Release Bundles cleanup
+2021-06-17T10:46:15.886Z [jfrt ] [INFO ] [d24b39a8dae32ddd] [aseBundleCleanupServiceImpl:84] [art-exec-69         ] - Starting to cleanup incomplete Release Bundles
+2021-06-17T10:46:15.887Z [jfrt ] [INFO ] [d24b39a8dae32ddd] [aseBundleCleanupServiceImpl:90] [art-exec-69         ] - Finished incomplete Release Bundles cleanup
+2021-06-17T11:46:15.888Z [jfrt ] [INFO ] [389fceaaee7aca87] [aseBundleCleanupServiceImpl:84] [art-exec-58         ] - Starting to cleanup incomplete Release Bundles
+2021-06-17T11:46:15.888Z [jfrt ] [INFO ] [389fceaaee7aca87] [aseBundleCleanupServiceImpl:90] [art-exec-58         ] - Finished incomplete Release Bundles cleanup
+2021-06-17T12:00:00.001Z [jfrt ] [INFO ] [4938799d0f2aaf04] [.s.d.b.s.BinaryServiceImpl:670] [art-exec-63         ] - Triggering Garbage Collection
+2021-06-17T12:00:00.001Z [jfrt ] [INFO ] [4938799d0f2aaf04] [.s.d.b.s.g.GarbageCollector:66] [art-exec-63         ] - Starting GC strategy 'TRASH_AND_BINARIES'
+2021-06-17T12:00:00.002Z [jfrt ] [INFO ] [4938799d0f2aaf04] [.s.d.b.s.g.GarbageCollector:68] [art-exec-63         ] - Finished GC Strategy 'TRASH_AND_BINARIES'
+2021-06-17T12:46:15.888Z [jfrt ] [INFO ] [21e80c6be3da530e] [aseBundleCleanupServiceImpl:84] [art-exec-63         ] - Starting to cleanup incomplete Release Bundles
+2021-06-17T12:46:15.889Z [jfrt ] [INFO ] [21e80c6be3da530e] [aseBundleCleanupServiceImpl:90] [art-exec-63         ] - Finished incomplete Release Bundles cleanup
+2021-06-17T12:57:37.794Z [jfrt ] [INFO ] [                ] [.j.a.c.g.GrpcStreamObserver:76] [efault-executor-4299] - affected platform config stream stopped gracefully - immediate cache invalidation will not work without restart
+2021-06-17T12:57:39.214Z [jfrt ] [INFO ] [                ] [ffectedConfigStreamObserver:32] [Stream_1623401174212] - publishing full invalidation and attempting to resubscribe to affected configuration changes
+2021-06-17T12:57:39.812Z [jfrt ] [ERROR] [                ] [.j.a.c.g.GrpcStreamObserver:97] [efault-executor-4299] - refreshing affected platform config stream - got an error (status: Status{code=INTERNAL, description=Received unexpected EOS on DATA frame from server., cause=null})
+io.grpc.StatusRuntimeException: INTERNAL: Received unexpected EOS on DATA frame from server.
+	at io.grpc.Status.asRuntimeException(Status.java:533)
+	at io.grpc.stub.ClientCalls$StreamObserverToCallListenerAdapter.onClose(ClientCalls.java:478)
+	at io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39)
+	at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23)
+	at io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40)
+	at org.jfrog.access.client.grpc.AuthorizationInterceptor$AuthenticatedClientCall$RejoiningClientCallListener.onClose(AuthorizationInterceptor.java:73)
+	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:413)
+	at io.grpc.internal.ClientCallImpl.access$500(ClientCallImpl.java:66)
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:742)
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:721)
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:123)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-06-17T12:57:39.813Z [jfrt ] [INFO ] [                ] [.j.a.c.g.GrpcStreamObserver:76] [efault-executor-4299] - affected platform config stream stopped gracefully - immediate cache invalidation will not work without restart
+2021-06-17T12:57:40.110Z [jfrt ] [ERROR] [                ] [.j.a.c.g.GrpcStreamObserver:97] [efault-executor-4313] - refreshing affected projects stream - got an error (status: Status{code=INTERNAL, description=Received unexpected EOS on DATA frame from server., cause=null})
+io.grpc.StatusRuntimeException: INTERNAL: Received unexpected EOS on DATA frame from server.
+	at io.grpc.Status.asRuntimeException(Status.java:533)
+	at io.grpc.stub.ClientCalls$StreamObserverToCallListenerAdapter.onClose(ClientCalls.java:478)
+	at io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39)
+	at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23)
+	at io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40)
+	at org.jfrog.access.client.grpc.AuthorizationInterceptor$AuthenticatedClientCall$RejoiningClientCallListener.onClose(AuthorizationInterceptor.java:73)
+	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:413)
+	at io.grpc.internal.ClientCallImpl.access$500(ClientCallImpl.java:66)
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:742)
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:721)
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:123)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-06-17T12:57:40.110Z [jfrt ] [INFO ] [                ] [.j.a.c.g.GrpcStreamObserver:76] [efault-executor-4313] - affected projects stream stopped gracefully - immediate cache invalidation will not work without restart
+2021-06-17T12:57:40.160Z [jfrt ] [ERROR] [                ] [.j.a.c.g.GrpcStreamObserver:97] [efault-executor-4313] - refreshing affected permissions stream - got an error (status: Status{code=INTERNAL, description=Received unexpected EOS on DATA frame from server., cause=null})
+io.grpc.StatusRuntimeException: INTERNAL: Received unexpected EOS on DATA frame from server.
+	at io.grpc.Status.asRuntimeException(Status.java:533)
+	at io.grpc.stub.ClientCalls$StreamObserverToCallListenerAdapter.onClose(ClientCalls.java:478)
+	at io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39)
+	at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23)
+	at io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40)
+	at org.jfrog.access.client.grpc.AuthorizationInterceptor$AuthenticatedClientCall$RejoiningClientCallListener.onClose(AuthorizationInterceptor.java:73)
+	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:413)
+	at io.grpc.internal.ClientCallImpl.access$500(ClientCallImpl.java:66)
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:742)
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:721)
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:123)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-06-17T12:57:40.160Z [jfrt ] [INFO ] [                ] [.j.a.c.g.GrpcStreamObserver:76] [efault-executor-4313] - affected permissions stream stopped gracefully - immediate cache invalidation will not work without restart
+2021-06-17T12:57:41.225Z [jfrt ] [INFO ] [                ] [ffectedConfigStreamObserver:32] [Stream_1623401176224] - publishing full invalidation and attempting to resubscribe to affected configuration changes
+2021-06-17T12:57:41.579Z [jfrt ] [INFO ] [                ] [ectedEntitiesStreamObserver:35] [Stream_1623401176577] - publishing full invalidation and attempting to resubscribe to affected permissions changes
+2021-06-17T13:46:15.886Z [jfrt ] [INFO ] [a699d5bdcf2e517b] [aseBundleCleanupServiceImpl:84] [art-exec-66         ] - Starting to cleanup incomplete Release Bundles
+2021-06-17T13:46:15.887Z [jfrt ] [INFO ] [a699d5bdcf2e517b] [aseBundleCleanupServiceImpl:90] [art-exec-66         ] - Finished incomplete Release Bundles cleanup
+2021-06-17T14:46:15.885Z [jfrt ] [INFO ] [39845179df8a3fd3] [aseBundleCleanupServiceImpl:84] [art-exec-68         ] - Starting to cleanup incomplete Release Bundles
+2021-06-17T14:46:15.886Z [jfrt ] [INFO ] [39845179df8a3fd3] [aseBundleCleanupServiceImpl:90] [art-exec-68         ] - Finished incomplete Release Bundles cleanup

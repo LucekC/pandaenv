@@ -1,0 +1,42 @@
+---
+federation:
+  inbound:
+    service-id-mapping:
+    - from: "jfrou@*"
+      to: "jfrou@01f7bx1pe9qecxd1dj698wp1v5"
+    - from: "jfmd@*"
+      to: "jfmd@01f7bx1qtktj5dgrd7t445jeh2"
+    - from: "jfevt@*"
+      to: "jfevt@01f7bx19j4gse11x6zk7h10p62"
+    - from: "jfrt@*"
+      to: "jfrt@01f7bx52m3966z1w8h4npq0tdb"
+    - from: "jffe@*"
+      to: "jffe@000"
+licenses:
+- server-name: "40b8095f9704"
+  key: "cHJvZHVjdHM6CiAgYXJ0aWZhY3Rvcnk6CiAgICBwcm9kdWN0OiBaWGh3YVhKbGN6b2dNakF5TVMw\r\
+    \nd055MHdORlF4Tmpvek56b3lNQzR5TVRWYUNtbGtPaUF6WkRWa01EVTJaUzB4TkRRekxUUm1NMlF0\r\
+    \nT1RnMlpTMDVNRFE1TkdNeVlXVTFZbVFLYjNkdVpYSTZJSFJsYzNRS2NISnZjR1Z5ZEdsbGN6b2dl\r\
+    \nMzBLYzJsbmJtRjBkWEpsT2lCdWRXeHNDblJ5YVdGc09pQjBjblZsQ25SNWNHVTZJRlJTU1VGTUNu\r\
+    \nWmhiR2xrUm5KdmJUb2dNakF5TVMwd05pMHdORlF4Tmpvek56b3lNQzR5TVRWYUNnPT0KICAgIHNp\r\
+    \nZ25hdHVyZTogZHFoNmlnNGRiQzg0WEhxTWQ0TUoyZGRXc2pDSTV2WTJpN0ZNeHRXdDFUK0hmS2kx\r\
+    \nN3k4YjErbHlwZUF3aDlucjFZMnVOUWFpY2NmTWEvRHhoVGIxallZYVJJUkFrRzBsK1MxN1pNMS9i\r\
+    \nNFpvbDdSR25icjNMVlJPU2ZjZ2UvUDhRMjZYTmRVZ3M2SU9XK0Y0U1NheHV3azNuMmdNemM4TG1j\r\
+    \ncXlVR3pxaVZ4TC83RlR3NFh2TWgxc2NZTW10Uk1XSG1zS2NtK0hGb1FzVUU2NnB6Z203V1JVY1RK\r\
+    \ncndlWUtyZ3I1ZnNvU1dNZUFsQkxiQ2JncDdjbW9aRm15WGp2QXZGWTdBYllGUUdHclRmRWtQQk5M\r\
+    \nOGVxSWFXNjdKeHJTSkpIYk1Fb2pmZUNTdzRBcVlvMDYxaVZ2ckRmOU8vbk1Rb0FDNmRHQXNuZFZL\r\
+    \nM21yTnZGRUNnPT0KdmVyc2lvbjogMQo=\r\n"
+- server-name: "4dc91af1c536"
+  key: "cHJvZHVjdHM6CiAgYXJ0aWZhY3Rvcnk6CiAgICBwcm9kdWN0OiBaWGh3YVhKbGN6b2dNakF5TVMw\r\
+    \nd055MHdORlF4Tmpvek56b3lNQzR5TVRWYUNtbGtPaUF6WkRWa01EVTJaUzB4TkRRekxUUm1NMlF0\r\
+    \nT1RnMlpTMDVNRFE1TkdNeVlXVTFZbVFLYjNkdVpYSTZJSFJsYzNRS2NISnZjR1Z5ZEdsbGN6b2dl\r\
+    \nMzBLYzJsbmJtRjBkWEpsT2lCdWRXeHNDblJ5YVdGc09pQjBjblZsQ25SNWNHVTZJRlJTU1VGTUNu\r\
+    \nWmhiR2xrUm5KdmJUb2dNakF5TVMwd05pMHdORlF4Tmpvek56b3lNQzR5TVRWYUNnPT0KICAgIHNp\r\
+    \nZ25hdHVyZTogZHFoNmlnNGRiQzg0WEhxTWQ0TUoyZGRXc2pDSTV2WTJpN0ZNeHRXdDFUK0hmS2kx\r\
+    \nN3k4YjErbHlwZUF3aDlucjFZMnVOUWFpY2NmTWEvRHhoVGIxallZYVJJUkFrRzBsK1MxN1pNMS9i\r\
+    \nNFpvbDdSR25icjNMVlJPU2ZjZ2UvUDhRMjZYTmRVZ3M2SU9XK0Y0U1NheHV3azNuMmdNemM4TG1j\r\
+    \ncXlVR3pxaVZ4TC83RlR3NFh2TWgxc2NZTW10Uk1XSG1zS2NtK0hGb1FzVUU2NnB6Z203V1JVY1RK\r\
+    \ncndlWUtyZ3I1ZnNvU1dNZUFsQkxiQ2JncDdjbW9aRm15WGp2QXZGWTdBYllGUUdHclRmRWtQQk5M\r\
+    \nOGVxSWFXNjdKeHJTSkpIYk1Fb2pmZUNTdzRBcVlvMDYxaVZ2ckRmOU8vbk1Rb0FDNmRHQXNuZFZL\r\
+    \nM21yTnZGRUNnPT0KdmVyc2lvbjogMQo=\r\n"
+schema-version: 2
