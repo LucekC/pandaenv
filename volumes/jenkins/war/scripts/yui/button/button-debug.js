@@ -1974,10 +1974,8 @@ version: 2.9.0
 
 				if (p_oEvent.returnValue !== false) {
 
-					if (this.submitForm() == "requestSubmit") {
-						// avoid double form submission in HtmlUnit
-						Event.preventDefault(p_oEvent);
-					}
+					this.submitForm();
+
 				}
 
 				break;
@@ -2427,18 +2425,11 @@ version: 2.9.0
         
             var sNodeName = this.NODE_NAME,
                 oElement = document.createElement(sNodeName);
-
-            var childHTML;
-            if (p_sType == "link") {
-                childHTML = "<a></a>";
-            } else if (p_sType == "submit") {
-                childHTML = "<button type=\"submit\"></button>";
-            } else {
-                childHTML = "<button type=\"button\"></button>";
-            }
-            oElement.innerHTML =  "<" + sNodeName + " class=\"first-child\">" +
-                childHTML + "</" + sNodeName + ">";
-
+        
+            oElement.innerHTML =  "<" + sNodeName + " class=\"first-child\">" + 
+                (p_sType == "link" ? "<a></a>" : 
+                "<button type=\"button\"></button>") + "</" + sNodeName + ">";
+        
             return oElement;
         
         },
@@ -2709,19 +2700,9 @@ version: 2.9.0
                     /*
                         If 'requestSubmit' is defined, use that instead of manually firing the event and then calling 'submit'.
                         See https://caniuse.com/mdn-api_htmlformelement_requestsubmit
+                        Passing 'oSrcElement' as parameter doesn't work for some reason, so don't?
                         */
-                    if (this.get("type") == "submit") {
-                        /* Trying very hard to find the right button...
-                        See https://issues.jenkins.io/browse/JENKINS-65585 */
-                        var buttons = this.getElementsByTagName('button');
-                        if (buttons.length == 1 && buttons[0].type == 'submit') {
-                            buttons[0].formNoValidate = true; // we used to not validate forms, so keep things this way
-                            oForm.requestSubmit(buttons[0]);
-                            return "requestSubmit";
-                        }
-                    }
-                    oForm.requestSubmit();
-                    return "requestSubmit";
+                    return oForm.requestSubmit();
                 }
         
                 if (UA.ie && (UA.ie < 9)) {

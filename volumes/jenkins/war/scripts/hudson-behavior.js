@@ -670,17 +670,6 @@ function registerMinMaxValidator(e) {
     e = null; // avoid memory leak
 }
 
-
-/**
- * Prevent user input 'e' or 'E' in <f:number>
- * @param event Input event
- */
-function preventInputEe(event) {
-    if (event.which === 69 || event.which === 101) {
-        event.preventDefault();
-    }
-}
-
 /**
  * Wraps a <button> into YUI button.
  *
@@ -971,31 +960,51 @@ function rowvgStartEachRow(recursive,f) {
 
     // validate form values to be an integer
     Behaviour.specify("INPUT.number", "input-number", ++p, function(e) {
-        e.addEventListener('keypress', preventInputEe)
+        e.addEventListener('keypress', function (event) {
+            if (event.which === 69 || event.which === 101) { // Prevent user input 'e' or 'E'
+                event.preventDefault();
+            }
+        })
         registerMinMaxValidator(e);
         registerRegexpValidator(e,/^((\-?\d+)|)$/,"Not an integer");
     });
 
     Behaviour.specify("INPUT.number-required", "input-number-required", ++p, function(e) {
-        e.addEventListener('keypress', preventInputEe)
+        e.addEventListener('keypress', function (event) {
+            if (event.which === 69 || event.which === 101) { // Prevent user input 'e' or 'E'
+                event.preventDefault();
+            }
+        })
         registerMinMaxValidator(e);
         registerRegexpValidator(e,/^\-?(\d+)$/,"Not an integer");
     });
 
     Behaviour.specify("INPUT.non-negative-number-required", "input-non-negative-number-required", ++p, function(e) {
-        e.addEventListener('keypress', preventInputEe)
+        e.addEventListener('keypress', function (event) {
+            if (event.which === 69 || event.which === 101) { // Prevent user input 'e' or 'E'
+                event.preventDefault();
+            }
+        })
         registerMinMaxValidator(e);
-        registerRegexpValidator(e,/^\d+$/,"Not a non-negative integer");
+        registerRegexpValidator(e,/^\d+$/,"Not a non-negative number");
     });
 
     Behaviour.specify("INPUT.positive-number", "input-positive-number", ++p, function(e) {
-        e.addEventListener('keypress', preventInputEe)
+        e.addEventListener('keypress', function (event) {
+            if (event.which === 69 || event.which === 101) { // Prevent user input 'e' or 'E'
+                event.preventDefault();
+            }
+        })
         registerMinMaxValidator(e);
         registerRegexpValidator(e,/^(\d*[1-9]\d*|)$/,"Not a positive integer");
     });
 
     Behaviour.specify("INPUT.positive-number-required", "input-positive-number-required", ++p, function(e) {
-        e.addEventListener('keypress', preventInputEe)
+        e.addEventListener('keypress', function (event) {
+            if (event.which === 69 || event.which === 101) { // Prevent user input 'e', 'E', '.'
+                event.preventDefault();
+            }
+        })
         registerMinMaxValidator(e);
         registerRegexpValidator(e,/^[1-9]\d*$/,"Not a positive integer");
     });
@@ -2622,7 +2631,7 @@ function shortenName(name) {
 
 //
 // structured form submission handling
-//   see https://www.jenkins.io/redirect/developer/structured-form-submission
+//   see https://jenkins.io/redirect/developer/structured-form-submission
 function buildFormTree(form) {
     try {
         // I initially tried to use an associative array with DOM elements as keys
