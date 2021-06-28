@@ -1,6 +1,6 @@
 ----------------------------------------------------------------
-Fri Jun 18 17:55:39 GMT 2021:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-017a-2043-948e-00001dcf5840 
+Wed Jun 23 18:01:46 GMT 2021:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-017a-3a08-f94d-000019cccd00 
 on database directory /var/opt/jfrog/artifactory/data/artifactory/derby with class loader java.net.URLClassLoader@7791a895 
 Loaded from file:/opt/jfrog/artifactory/app/artifactory/tomcat/lib/derby-10.14.2.0.jar
 java.vendor=AdoptOpenJDK

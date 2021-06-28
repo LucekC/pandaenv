@@ -3,7 +3,9 @@
   <approvedScriptHashes>
     <string>017d0db438428731cd600b6ebda805065433520f</string>
   </approvedScriptHashes>
-  <approvedSignatures/>
+  <approvedSignatures>
+    <string>method org.apache.maven.model.Model getArtifactId</string>
+  </approvedSignatures>
   <aclApprovedSignatures/>
   <approvedClasspathEntries/>
   <pendingScripts/>

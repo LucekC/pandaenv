@@ -1,8 +1,12 @@
-Started at Mon Jun 21 06:53:50 UTC 2021
+Started at Mon Jun 28 06:03:09 UTC 2021
 Processing CodePull
 Offering CodePull to Project Build Discarder
 Processing Job1
 Offering Job1 to Project Build Discarder
+Processing pipeline
+Offering pipeline to Project Build Discarder
+Processing pipelinev2
+Offering pipelinev2 to Project Build Discarder
 Processing test
 Offering test to Project Build Discarder
-Finished at Mon Jun 21 06:53:50 UTC 2021. 0ms
+Finished at Mon Jun 28 06:03:09 UTC 2021. 1ms

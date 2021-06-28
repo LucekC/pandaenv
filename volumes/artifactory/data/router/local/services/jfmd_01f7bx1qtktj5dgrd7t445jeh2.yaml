@@ -7,5 +7,5 @@ endpoints:
 healthcheckendpoint:
     path: /api/v1/system/ping
     port: 8086
-nodeid: 1406f5853211
+nodeid: 7cd077b43994
 serviceid: jfmd@01f7bx1qtktj5dgrd7t445jeh2
